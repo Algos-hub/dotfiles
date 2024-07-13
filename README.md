@@ -12,6 +12,7 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     I also have multiple CLI tools that I use that are all listed here.
     </summary>
     
+<ul>
     * [NodeJS](https://nodejs.org/en)\
     * [fzf](https://github.com/junegunn/fzf)\
     * [bat](https://github.com/sharkdp/bat)\
@@ -26,6 +27,7 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     * [tree-sitter](https://tree-sitter.github.io/tree-sitter/)\
     * [ktlint](https://github.com/pinterest/ktlint)\
     * [neofetch](https://github.com/dylanaraps/neofetch)\
+</ul>
 </details>
 
 And if you're also using a Mac you can run the [`installs.sh`](https://github.com/Algos-hub/dotfiles/zshrc/installs.sh) script inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory to install all the CLI tools alongside Neovim and Tmux.
@@ -94,7 +96,7 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
     <summary>
         Plugins used:
     </summary>
-
+<ul>
     * Theme: [maxmx03/solarized.nvim](https://github.com/maxmx03/solarized.nvim)\
     * Tmux navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)\
     * Auto-pairing (parenthesis, brackets, quotes, etc...): [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)\
@@ -127,6 +129,7 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
             * [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)\
             * [hrsh7th/vim-vsnip-integ](https://github.com/hrsh7th/vim-vsnip-integ)\
             * [artemave/workspace-diagnostics.nvim](https://github.com/artemave/workspace-diagnostics.nvim) (For LSP diagnostics per workspace instead of per buffer)
+</ul>
 
 </details>
 
