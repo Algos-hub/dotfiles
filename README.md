@@ -14,19 +14,19 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     
 <ul>
     <li><a href="https://nodejs.org/en">NodeJS</a></li>
-    <li>[fzf](https://github.com/junegunn/fzf)</li>
-    <li>[bat](https://github.com/sharkdp/bat)</li>
-    <li>[Lua](https://www.lua.org/)</li>
-    <li>[LuaJIT](https://luajit.org/)</li>
-    <li>[Luarocks](https://luarocks.org/)</li>
-    <li>[Python](https://www.python.org/)</li>
-    <li>[pipx](https://github.com/pypa/pipx)</li>
-    <li>[PHP](https://www.php.net/)</li>
-    <li>[pretty-php](https://github.com/lkrms/pretty-php)</li>
-    <li>[prettierd](https://github.com/fsouza/prettierd)</li>
-    <li>[tree-sitter](https://tree-sitter.github.io/tree-sitter/)</li>
-    <li>[ktlint](https://github.com/pinterest/ktlint)</li>
-    <li>[neofetch](https://github.com/dylanaraps/neofetch)</li>
+    <li><a href="https://github.com/junegunn/fzf">fzf</a></li>
+    <li><a href="https://github.com/sharkdp/bat">bat</a></li>
+    <li><a href="https://www.lua.org/">Lua</a></li>
+    <li><a href="https://luajit.org/">LuaJIT</a></li>
+    <li><a href="https://luarocks.org/">Luarocks</a></li>
+    <li><a href="https://www.python.org/">Python</a></li>
+    <li><a href="https://github.com/pypa/pipx">pipx</a></li>
+    <li><a href="https://www.php.net/">PHP</a></li>
+    <li><a href="https://github.com/lkrms/pretty-php">pretty-php</a></li>
+    <li><a href="https://github.com/fsouza/prettierd">prettierd</a></li>
+    <li><a href="https://tree-sitter.github.io/tree-sitter/">tree-sitter</a></li>
+    <li><a href="https://github.com/pinterest/ktlint">ktlint</a></li>
+    <li><a href="https://github.com/dylanaraps/neofetch">neofetch</a></li>
 </ul>
 </details>
 
