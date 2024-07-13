@@ -35,6 +35,7 @@ And if you're also using a Mac you can run the [`installs.sh`](https://github.co
 <details>
     <summary>
 <h2> .zshrc </h2>
+___
     </summary>
 
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
@@ -56,6 +57,7 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 <details>
     <summary>
 <h2> Tmux configuration </h2>
+___
     </summary>
 
 The following plugins have been used:
@@ -64,7 +66,7 @@ Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)\
 Standard base options: [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)\
 Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)\
 Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)\
-Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)\
+Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
 # Installation
 
@@ -89,6 +91,7 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 <details>
     <summary>
 <h2> Neovim configuration </h2>
+___
     </summary>
 
 <details>
