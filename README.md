@@ -13,20 +13,20 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     </summary>
     
 <ul>
-    * [NodeJS](https://nodejs.org/en)\
-    * [fzf](https://github.com/junegunn/fzf)\
-    * [bat](https://github.com/sharkdp/bat)\
-    * [Lua](https://www.lua.org/)\
-    * [LuaJIT](https://luajit.org/)\
-    * [Luarocks](https://luarocks.org/)\
-    * [Python](https://www.python.org/)\
-    * [pipx](https://github.com/pypa/pipx)\
-    * [PHP](https://www.php.net/)\
-    * [pretty-php](https://github.com/lkrms/pretty-php)\
-    * [prettierd](https://github.com/fsouza/prettierd)\
-    * [tree-sitter](https://tree-sitter.github.io/tree-sitter/)\
-    * [ktlint](https://github.com/pinterest/ktlint)\
-    * [neofetch](https://github.com/dylanaraps/neofetch)\
+    <li>[NodeJS](https://nodejs.org/en)</li>
+    <li>[fzf](https://github.com/junegunn/fzf)</li>
+    <li>[bat](https://github.com/sharkdp/bat)</li>
+    <li>[Lua](https://www.lua.org/)</li>
+    <li>[LuaJIT](https://luajit.org/)</li>
+    <li>[Luarocks](https://luarocks.org/)</li>
+    <li>[Python](https://www.python.org/)</li>
+    <li>[pipx](https://github.com/pypa/pipx)</li>
+    <li>[PHP](https://www.php.net/)</li>
+    <li>[pretty-php](https://github.com/lkrms/pretty-php)</li>
+    <li>[prettierd](https://github.com/fsouza/prettierd)</li>
+    <li>[tree-sitter](https://tree-sitter.github.io/tree-sitter/)</li>
+    <li>[ktlint](https://github.com/pinterest/ktlint)</li>
+    <li>[neofetch](https://github.com/dylanaraps/neofetch)</li>
 </ul>
 </details>
 
@@ -57,7 +57,7 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
     <summary>
 <h2> Tmux configuration </h2>
     </summary>
-    
+
 
 The following plugins have been used:
 
