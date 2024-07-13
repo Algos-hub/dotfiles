@@ -36,7 +36,8 @@ And if you're also using a Mac you can run the [`installs.sh`](https://github.co
 
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
 
-## Installation
+<details>
+    <summary><h2>Installation</h2></summary>
 
 ### 1: Install Oh-My-Zsh and Powerlevel10k
 
@@ -47,6 +48,8 @@ You can find the installation guides on their respective websites.
 ### 2: Copy the provided files
 
 Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/dotfiles/zshrc/alias.sh), [`exports.sh`](https://github.com/Algos-hub/dotfiles/zshrc/exports.sh), and [`oh-my-zsh.sh`](https://github.com/Algos-hub/dotfiles/zshrc/oh-my-zsh.sh) into your `.zshrc`. Then copy the contents of [`.p10k.zsh`](https://github.com/Algos-hub/dotfiles/zshrc/.p10k.zsh) into your `.p10k.zsh` file.
+
+</details>
 
 # Tmux configuration
 
