@@ -36,7 +36,7 @@ And if you're also using a Mac you can run the [`installs.sh`](https://github.co
 
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
 
-# Installation
+## Installation
 
 ### 1: Install Oh-My-Zsh and Powerlevel10k
 
@@ -58,7 +58,7 @@ Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-ya
 Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)\
 Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
-# Installation
+## Installation
 
 ### 1: Install tpm
 
@@ -154,7 +154,7 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 
 </details>
 
-# Installation
+## Installation
 
 ### 1: Install make (optional)
 
