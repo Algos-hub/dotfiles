@@ -32,10 +32,7 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
 
 And if you're also using a Mac you can run the [`installs.sh`](https://github.com/Algos-hub/dotfiles/zshrc/installs.sh) script inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory to install all the CLI tools alongside Neovim and Tmux.
 
-<details>
-    <summary>
-# .zshrc\
-    </summary>
+# .zshrc
 
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
 
@@ -51,13 +48,7 @@ You can find the installation guides on their respective websites.
 
 Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/dotfiles/zshrc/alias.sh), [`exports.sh`](https://github.com/Algos-hub/dotfiles/zshrc/exports.sh), and [`oh-my-zsh.sh`](https://github.com/Algos-hub/dotfiles/zshrc/oh-my-zsh.sh) into your `.zshrc`. Then copy the contents of [`.p10k.zsh`](https://github.com/Algos-hub/dotfiles/zshrc/.p10k.zsh) into your `.p10k.zsh` file.
 
-</details>
-
-<details>
-    <summary>
-        <h2> Tmux configuration </h2>
-        <hr/>
-    </summary>
+# Tmux configuration
 
 The following plugins have been used:
 
@@ -85,13 +76,7 @@ Clone this repo and move the .tmux.conf file into your home directory.
 
 Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of tmux it should be `C-b`)
 
-</details>
-
-<details>
-    <summary>
-        <h2> Neovim configuration </h2>
-        <hr/>
-    </summary>
+# Neovim configuration
 
 <details>
     <summary>
@@ -235,5 +220,3 @@ To install, clone this repo into your `.config` directory and rename the `neovim
     git clone https://github.com/Algos-hub/dotfiles ~
     mv ~/dotfiles/nvim/.config/nvim ~/.config
 ```
-
-</details>
