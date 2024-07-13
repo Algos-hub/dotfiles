@@ -58,7 +58,6 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 <h2> Tmux configuration </h2>
     </summary>
 
-
 The following plugins have been used:
 
 Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
@@ -97,47 +96,47 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
         Plugins used:
     </summary>
     <ul>
-        <li>Theme: [maxmx03/solarized.nvim](https://github.com/maxmx03/solarized.nvim)</li>
-        <li>Tmux navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)</li>
-        <li>Auto-pairing (parenthesis, brackets, quotes, etc...): [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)</li>
-        <li>Enhancing `a`/`i` selection: [echasnovski/mini.ai](https://github.com/echasnovski/mini.ai)</li>
-        <li>Enhancing surrounding text: [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)</li>
-        <li>Icons: [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)</li>
-        <li>Git wrapper: [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)</li>
-        <li>Git buffer integration: [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)</li>
-        <li>Statusline: [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)</li>
-        <li>Comment shortcut: [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)</li>
-        <li>File tree: [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)</li>
-        <li>Custom ColorColumn behavior: [m4xshen/smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim)</li>
-        <li>Custom splash screen: [startup-nvim/startup.nvim](https://github.com/startup-nvim/startup.nvim)</li>
-        <li>Fuzzy finder: [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+        <li>Theme: <a href="https://github.com/maxmx03/solarized.nvim">maxmx03/solarized.nvim</a></li>
+        <li>Tmux navigation integration: <a href="https://github.com/christoomey/vim-tmux-navigator">christoomey/vim-tmux-navigator</a></li>
+        <li>Auto-pairing (parenthesis, brackets, quotes, etc...): <a href="https://github.com/windwp/nvim-autopairs">windwp/nvim-autopairs</a></li>
+        <li>Enhancing `a`/`i` selection: <a href="https://github.com/echasnovski/mini.ai">echasnovski/mini.ai</a></li>
+        <li>Enhancing surrounding text: <a href="https://github.com/kylechui/nvim-surround">kylechui/nvim-surround</a></li>
+        <li>Icons: <a href="https://github.com/nvim-tree/nvim-web-devicons">nvim-tree/nvim-web-devicons</a></li>
+        <li>Git wrapper: <a href="https://github.com/tpope/vim-fugitive">tpope/vim-fugitive</a></li>
+        <li>Git buffer integration: <a href="https://github.com/lewis6991/gitsigns.nvim">lewis6991/gitsigns.nvim</a></li>
+        <li>Statusline: <a href="https://github.com/nvim-lualine/lualine.nvim">nvim-lualine/lualine.nvim</a></li>
+        <li>Comment shortcut: <a href="https://github.com/numToStr/Comment.nvim">numToStr/Comment.nvim</a></li>
+        <li>File tree: <a href="https://github.com/nvim-tree/nvim-tree.lua">nvim-tree/nvim-tree.lua</a></li>
+        <li>Custom ColorColumn behavior: <a href="https://github.com/m4xshen/smartcolumn.nvim">m4xshen/smartcolumn.nvim</a></li>
+        <li>Custom splash screen: <a href="https://github.com/startup-nvim/startup.nvim">startup-nvim/startup.nvim</a></li>
+        <li>Fuzzy finder: <a href="https://github.com/nvim-telescope/telescope.nvim">nvim-telescope/telescope.nvim</a>
             <ul>
             dependency: 
-                <li>[nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)</li> 
+                <li><a href="https://github.com/nvim-lua/plenary.nvim">nvim-lua/plenary.nvim</a></li> 
             </ul>
         </li>
-        <li>Syntax highlighting: [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)</li>
-        <li>Formatter: [nvimtools/none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)
+        <li>Syntax highlighting: <a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter/nvim-treesitter</a></li>
+        <li>Formatter: <a href="https://github.com/nvimtools/none-ls.nvim">nvimtools/none-ls.nvim</a>
             <ul>
             dependency: 
-                <li>[nvimtools/none-ls-extras.nvim](https://github.com/nvimtools/none-ls-extras.nvim)</li> 
+                <li><a href="https://github.com/nvimtools/none-ls-extras.nvim">nvimtools/none-ls-extras.nvim</a></li> 
             </ul>
         </li>
-        <li>Language Server Protocol (LSP): [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+        <li>Language Server Protocol (LSP): <a href="https://github.com/neovim/nvim-lspconfig">neovim/nvim-lspconfig</a>
             <ul>
             dependencies:
-            <li>[hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)</li>
-            <li>[hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)</li>
-            <li>[hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)</li>
-            <li>[hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)</li>
-            <li>[hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)</li>
-            <li>[williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) (LSP package manager)</li>
-            <li>[williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)</li>
-            <li>[kosayoda/nvim-lightbulb](https://github.com/kosayoda/nvim-lightbulb) (For code actions notifications)</li>
-            <li>[hrsh7th/cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip)</li>
-            <li>[hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)</li>
-            <li>[hrsh7th/vim-vsnip-integ](https://github.com/hrsh7th/vim-vsnip-integ)</li>
-            <li>[artemave/workspace-diagnostics.nvim](https://github.com/artemave/workspace-diagnostics.nvim) (For LSP diagnostics per workspace instead of per buffer)</li>
+            <li><a href="https://github.com/hrsh7th/cmp-nvim-lsp">hrsh7th/cmp-nvim-lsp</a></li>
+            <li><a href="https://github.com/hrsh7th/cmp-buffer">hrsh7th/cmp-buffer</a></li>
+            <li><a href="https://github.com/hrsh7th/cmp-path">hrsh7th/cmp-path</a></li>
+            <li><a href="https://github.com/hrsh7th/cmp-cmdline">hrsh7th/cmp-cmdline</a></li>
+            <li><a href="https://github.com/hrsh7th/nvim-cmp">hrsh7th/nvim-cmp</a></li>
+            <li><a href="https://github.com/williamboman/mason.nvim">williamboman/mason.nvim</a> (LSP package manager)</li>
+            <li><a href="https://github.com/williamboman/mason-lspconfig.nvim">williamboman/mason-lspconfig.nvim</a></li>
+            <li><a href="https://github.com/kosayoda/nvim-lightbulb">kosayoda/nvim-lightbulb</a> (For code actions notifications)</li>
+            <li><a href="https://github.com/hrsh7th/cmp-vsnip">hrsh7th/cmp-vsnip</a></li>
+            <li><a href="https://github.com/hrsh7th/vim-vsnip">hrsh7th/vim-vsnip</a></li>
+            <li><a href="https://github.com/hrsh7th/vim-vsnip-integ">hrsh7th/vim-vsnip-integ</a></li>
+            <li><a href="https://github.com/artemave/workspace-diagnostics.nvim">artemave/workspace-diagnostics.nvim</a> (For LSP diagnostics per workspace instead of per buffer)</li>
         </ul>
         </li>
     </ul>
