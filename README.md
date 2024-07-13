@@ -34,8 +34,7 @@ And if you're also using a Mac you can run the [`installs.sh`](https://github.co
 
 <details>
     <summary>
-        <h2> .zshrc </h2>
-        <hr/>
+# .zshrc
     </summary>
 
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
