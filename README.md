@@ -11,28 +11,30 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     <summary>
     I also have multiple CLI tools that I use that are all listed here.
     </summary>
-    * [NodeJS](https://nodejs.org/en)
-    * [fzf](https://github.com/junegunn/fzf)
-    * [bat](https://github.com/sharkdp/bat)
-    * [Lua](https://www.lua.org/)
-    * [LuaJIT](https://luajit.org/)
-    * [Luarocks](https://luarocks.org/)
-    * [Python](https://www.python.org/)
-    * [pipx](https://github.com/pypa/pipx)
-    * [PHP](https://www.php.net/)
-    * [pretty-php](https://github.com/lkrms/pretty-php)
-    * [prettierd](https://github.com/fsouza/prettierd)
-    * [tree-sitter](https://tree-sitter.github.io/tree-sitter/)
-    * [ktlint](https://github.com/pinterest/ktlint)
-    * [neofetch](https://github.com/dylanaraps/neofetch)
+    
+    * [NodeJS](https://nodejs.org/en)\
+    * [fzf](https://github.com/junegunn/fzf)\
+    * [bat](https://github.com/sharkdp/bat)\
+    * [Lua](https://www.lua.org/)\
+    * [LuaJIT](https://luajit.org/)\
+    * [Luarocks](https://luarocks.org/)\
+    * [Python](https://www.python.org/)\
+    * [pipx](https://github.com/pypa/pipx)\
+    * [PHP](https://www.php.net/)\
+    * [pretty-php](https://github.com/lkrms/pretty-php)\
+    * [prettierd](https://github.com/fsouza/prettierd)\
+    * [tree-sitter](https://tree-sitter.github.io/tree-sitter/)\
+    * [ktlint](https://github.com/pinterest/ktlint)\
+    * [neofetch](https://github.com/dylanaraps/neofetch)\
 </details>
 
 And if you're also using a Mac you can run the [`installs.sh`](https://github.com/Algos-hub/dotfiles/zshrc/installs.sh) script inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory to install all the CLI tools alongside Neovim and Tmux.
 
 <details>
     <summary>
-# ZSHRC
+<h1> ZSHRC </h1>
     </summary>
+
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
 
 # Installation
@@ -51,8 +53,9 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 
 <details>
     <summary>
-# Tmux configuration
+<h1> Tmux configuration </h1>
     </summary>
+    
 
 The following plugins have been used:
 
@@ -84,7 +87,7 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 
 <details>
     <summary>
-# Neovim configuration
+<h1> Neovim configuration </h1>
     </summary>
 
 <details>
@@ -93,9 +96,8 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
     </summary>
 
     * Theme: [maxmx03/solarized.nvim](https://github.com/maxmx03/solarized.nvim)\
-
-_ Tmux navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)\
-    _ Auto-pairing (parenthesis, brackets, quotes, etc...): [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)\
+    * Tmux navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)\
+    * Auto-pairing (parenthesis, brackets, quotes, etc...): [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)\
     * Enhancing `a`/`i` selection: [echasnovski/mini.ai](https://github.com/echasnovski/mini.ai)\
     * Enhancing surrounding text: [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)\
     * Icons: [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)\
