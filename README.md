@@ -60,11 +60,11 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 
 The following plugins have been used:
 
-Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
-Standard base options: [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
-Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)
-Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)
-Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)\
+Standard base options: [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)\
+Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)\
+Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)\
+Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)\
 
 # Installation
 
