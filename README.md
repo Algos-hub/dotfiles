@@ -32,7 +32,7 @@ And if you're also using a Mac you can run the [`installs.sh`](https://github.co
 
 <details>
     <summary>
-<h1> ZSHRC </h1>
+<h2> ZSHRC </h2>
     </summary>
 
 All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
@@ -53,7 +53,7 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 
 <details>
     <summary>
-<h1> Tmux configuration </h1>
+<h2> Tmux configuration </h2>
     </summary>
     
 
@@ -87,7 +87,7 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 
 <details>
     <summary>
-<h1> Neovim configuration </h1>
+<h2> Neovim configuration </h2>
     </summary>
 
 <details>
