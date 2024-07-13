@@ -61,17 +61,17 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 
 The following plugins have been used:
 
-Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)\
-Standard base options: [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)\
-Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)\
-Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)\
+Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
+Standard base options: [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)
+Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)
 Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
 # Installation
 
 ### 1: Install tpm
 
-This tmux configuration requires the tpm. If you already have tpm installed you can skip this step.\
+This tmux configuration requires the tpm. If you already have tpm installed you can skip this step.
     To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)
 
 ### 2: Cloning this repo
@@ -96,40 +96,51 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
     <summary>
         Plugins used:
     </summary>
-<ul>
-    * Theme: [maxmx03/solarized.nvim](https://github.com/maxmx03/solarized.nvim)\
-    * Tmux navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)\
-    * Auto-pairing (parenthesis, brackets, quotes, etc...): [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)\
-    * Enhancing `a`/`i` selection: [echasnovski/mini.ai](https://github.com/echasnovski/mini.ai)\
-    * Enhancing surrounding text: [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)\
-    * Icons: [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)\
-    * Git wrapper: [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)\
-    * Git buffer integration: [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)\
-    * Statusline: [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)\
-    * Comment shortcut: [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)\
-    * File tree: [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)\
-    * Custom ColorColumn behavior: [m4xshen/smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim)\
-    * Custom splash screen: [startup-nvim/startup.nvim](https://github.com/startup-nvim/startup.nvim)\
-    * Fuzzy finder: [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)\
-            dependency: [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) \
-    * Syntax highlighting: [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)\
-    * Formatter: [nvimtools/none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)\
-            dependency: [nvimtools/none-ls-extras.nvim](https://github.com/nvimtools/none-ls-extras.nvim) \
-    * Language Server Protocol (LSP): [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)\
-            dependencies:\
-            * [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)\
-            * [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)\
-            * [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)\
-            * [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)\
-            * [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)\
-            * [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) (LSP package manager)\
-            * [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)\
-            * [kosayoda/nvim-lightbulb](https://github.com/kosayoda/nvim-lightbulb) (For code actions notifications)\
-            * [hrsh7th/cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip)\
-            * [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)\
-            * [hrsh7th/vim-vsnip-integ](https://github.com/hrsh7th/vim-vsnip-integ)\
-            * [artemave/workspace-diagnostics.nvim](https://github.com/artemave/workspace-diagnostics.nvim) (For LSP diagnostics per workspace instead of per buffer)
-</ul>
+    <ul>
+        <li>Theme: [maxmx03/solarized.nvim](https://github.com/maxmx03/solarized.nvim)</li>
+        <li>Tmux navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)</li>
+        <li>Auto-pairing (parenthesis, brackets, quotes, etc...): [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)</li>
+        <li>Enhancing `a`/`i` selection: [echasnovski/mini.ai](https://github.com/echasnovski/mini.ai)</li>
+        <li>Enhancing surrounding text: [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)</li>
+        <li>Icons: [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)</li>
+        <li>Git wrapper: [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)</li>
+        <li>Git buffer integration: [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)</li>
+        <li>Statusline: [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)</li>
+        <li>Comment shortcut: [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)</li>
+        <li>File tree: [nvim-tree/nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)</li>
+        <li>Custom ColorColumn behavior: [m4xshen/smartcolumn.nvim](https://github.com/m4xshen/smartcolumn.nvim)</li>
+        <li>Custom splash screen: [startup-nvim/startup.nvim](https://github.com/startup-nvim/startup.nvim)</li>
+        <li>Fuzzy finder: [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+            <ul>
+            dependency: 
+                <li>[nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)</li> 
+            </ul>
+        </li>
+        <li>Syntax highlighting: [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)</li>
+        <li>Formatter: [nvimtools/none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)
+            <ul>
+            dependency: 
+                <li>[nvimtools/none-ls-extras.nvim](https://github.com/nvimtools/none-ls-extras.nvim)</li> 
+            </ul>
+        </li>
+        <li>Language Server Protocol (LSP): [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+            <ul>
+            dependencies:
+            <li>[hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)</li>
+            <li>[hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)</li>
+            <li>[hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)</li>
+            <li>[hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)</li>
+            <li>[hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)</li>
+            <li>[williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) (LSP package manager)</li>
+            <li>[williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)</li>
+            <li>[kosayoda/nvim-lightbulb](https://github.com/kosayoda/nvim-lightbulb) (For code actions notifications)</li>
+            <li>[hrsh7th/cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip)</li>
+            <li>[hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)</li>
+            <li>[hrsh7th/vim-vsnip-integ](https://github.com/hrsh7th/vim-vsnip-integ)</li>
+            <li>[artemave/workspace-diagnostics.nvim](https://github.com/artemave/workspace-diagnostics.nvim) (For LSP diagnostics per workspace instead of per buffer)</li>
+        </ul>
+        </li>
+    </ul>
 
 </details>
 
@@ -161,8 +172,8 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 
 ### 1: Install make (optional)
 
-This neovim configuration uses the telescope-fzf-native.nvim extension for telescope which requires `make`.\
-    `make` is used to build the binaries for telescope-fzf-native.nvim, which is used to speed up telescope but is not required.\
+This neovim configuration uses the telescope-fzf-native.nvim extension for telescope which requires `make`.
+    `make` is used to build the binaries for telescope-fzf-native.nvim, which is used to speed up telescope but is not required.
     If you do not wish to use telescope-fzf-native.nvim you can delete `telescope-fzf.lua` and remove the lines 4-13 and 17-24 from `telescope.lua`
 
 #### `telescope.lua`
@@ -216,7 +227,7 @@ return {
 
 ### 2: Cloning this repo
 
-To install, clone this repo into your `.config` directory and rename the `neovim-config` directory to `nvim`.\
+To install, clone this repo into your `.config` directory and rename the `neovim-config` directory to `nvim`.
     If you already have an `nvim` directory, you may need to delete/move it somewhere else first.
 
 ```bash
