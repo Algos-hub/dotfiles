@@ -61,7 +61,8 @@ Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-ya
 Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)\
 Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
-## Installation
+<details>
+    <summary><h2>Installation</h2></summary>
 
 ### 1: Install tpm
 
@@ -78,6 +79,8 @@ Clone this repo and move the .tmux.conf file into your home directory.
 ```
 
 Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of tmux it should be `C-b`)
+
+</details>
 
 # Neovim configuration
 
@@ -157,7 +160,8 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 
 </details>
 
-## Installation
+<details>
+    <summary><h2>Installation</h2></summary>
 
 ### 1: Install make (optional)
 
@@ -223,3 +227,5 @@ To install, clone this repo into your `.config` directory and rename the `neovim
     git clone https://github.com/Algos-hub/dotfiles ~
     mv ~/dotfiles/nvim/.config/nvim ~/.config
 ```
+
+</details>
