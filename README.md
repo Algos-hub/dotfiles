@@ -13,7 +13,7 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     </summary>
     
 <ul>
-    <li>[NodeJS](https://nodejs.org/en)</li>
+    <li><a href="https://nodejs.org/en">NodeJS</a></li>
     <li>[fzf](https://github.com/junegunn/fzf)</li>
     <li>[bat](https://github.com/sharkdp/bat)</li>
     <li>[Lua](https://www.lua.org/)</li>
