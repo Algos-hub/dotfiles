@@ -143,30 +143,6 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
 </details>
 
 <details>
-    <summary>Screenshots</summary>
-
-### Startup screen
-
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/startup.jpg "Startup screen")
-
-### LSP integration
-
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/lsp_integration_1.jpg "Code completion")
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/lsp_integration_2.jpg "Code completion definition")
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/lsp_integration_3.jpg "Buffer hover")
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/code_actions.jpg "Code actions popup")
-
-### File Explorer (nvim-tree)
-
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/nvim_tree.jpg "File explorer")
-
-### Fuzzy finder (telescope)
-
-![alt-text](https://github.com/Algos-hub/neovim-config/blob/main/resources/telescope.jpg "Fuzzy finder popup")
-
-</details>
-
-<details>
     <summary><h2>Installation</h2></summary>
 
 ### 1: Install make (optional)
