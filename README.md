@@ -53,13 +53,19 @@ Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/d
 
 # Tmux configuration
 
-The following plugins have been used:
+<details>
+    <summary>
+        Plugins used:
+    </summary>
 
-Plugin Manager: [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)\
-Standard base options: [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)\
-Copy and paste: [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank)\
-Status line: [o0th/tmux-nova](https://github.com/o0th/tmux-nova)\
-Vim navigation integration: [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+<ul>
+    <li>Plugin Manager: <a href="https://github.com/tmux-plugins/tpm">tmux-plugins/tpm</a></li>
+    <li>Standard base options: <a href="https://github.com/tmux-plugins/tmux-sensible">tmux-plugins/tmux-sensible</a></li>
+    <li>Copy and paste: <a href="https://github.com/tmux-plugins/tmux-yank">tmux-plugins/tmux-yank</a></li>
+    <li>Status line: <a href="https://github.com/o0th/tmux-nova">o0th/tmux-nova</a></li>
+    <li>Vim navigation integration: <a href="https://github.com/christoomey/vim-tmux-navigator">christoomey/vim-tmux-navigator</a></li>
+    <ul>
+</details>
 
 <details>
     <summary><h2>Installation</h2></summary>
