@@ -222,10 +222,10 @@
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
   # typeset -g POWERLEVEL9K_DIR_BACKGROUND=4
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND="#268bd2"
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND="#ea9a97"
   # Default current directory foreground color.
   # typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND="#002b36"
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND="#27272b"
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
@@ -233,11 +233,11 @@
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
   # typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=250
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND="#002b36"
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND="#27272b"
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
   # typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND="#002b36"
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND="#27272b"
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
@@ -523,21 +523,21 @@
   typeset -g POWERLEVEL9K_STATUS_OK=false
   typeset -g POWERLEVEL9K_STATUS_OK_VISUAL_IDENTIFIER_EXPANSION='✔'
   typeset -g POWERLEVEL9K_STATUS_OK_FOREGROUND=2
-  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_STATUS_OK_BACKGROUND="#27272b"
 
   # Status when some part of a pipe command fails but the overall exit status is zero. It may look
   # like this: 1|0.
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE=true
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_VISUAL_IDENTIFIER_EXPANSION='✔'
   typeset -g POWERLEVEL9K_STATUS_OK_PIPE_FOREGROUND=2
-  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_STATUS_OK_PIPE_BACKGROUND="#27272b"
 
   # Status when it's just an error code (e.g., '1'). No need to show it if prompt_char is enabled as
   # it will signify error by turning red.
   typeset -g POWERLEVEL9K_STATUS_ERROR=false
   typeset -g POWERLEVEL9K_STATUS_ERROR_VISUAL_IDENTIFIER_EXPANSION='✘'
   typeset -g POWERLEVEL9K_STATUS_ERROR_FOREGROUND=1
-  typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_STATUS_ERROR_BACKGROUND="#27272b"
 
   # Status when the last command was terminated by a signal.
   typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL=true
@@ -545,19 +545,19 @@
   typeset -g POWERLEVEL9K_STATUS_VERBOSE_SIGNAME=false
   typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_VISUAL_IDENTIFIER_EXPANSION='✘'
   typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_FOREGROUND=1
-  typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_STATUS_ERROR_SIGNAL_BACKGROUND="#27272b"
 
   # Status when some part of a pipe command fails and the overall exit status is also non-zero.
   # It may look like this: 1|0.
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE=true
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_VISUAL_IDENTIFIER_EXPANSION='✘'
   typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_FOREGROUND=1
-  typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_STATUS_ERROR_PIPE_BACKGROUND="#27272b"
 
   ###################[ command_execution_time: duration of the last command ]###################
   # Execution time color.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="#93a1a1"
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="#27272b"
   # Show duration of the last command if takes at least this many seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
   # Show this many fractional digits. Zero means round to seconds.
@@ -572,7 +572,7 @@
   #######################[ background_jobs: presence of background jobs ]#######################
   # Background jobs color.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=3
-  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="#002b36"
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="#27272b"
   # Don't show the number of background jobs.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=false
   # Custom icon.
@@ -1760,8 +1760,8 @@
 
   ####################################[ time: current time ]####################################
   # Current time color.
-  typeset -g POWERLEVEL9K_TIME_FOREGROUND="#002b36"
-  typeset -g POWERLEVEL9K_TIME_BACKGROUND="#268bd2"
+  typeset -g POWERLEVEL9K_TIME_FOREGROUND="#27272b"
+  typeset -g POWERLEVEL9K_TIME_BACKGROUND="#ea9a97"
   # Format for the current time: 09:51:02. See `man 3 strftime`.
   typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
   # If set to true, time will update when you hit enter. This way prompts for the past

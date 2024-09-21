@@ -54,7 +54,8 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -192,19 +193,17 @@ bindsym $mod+r mode "resize"
 # }
 
 
-set $background  #002b36
-set $background-alt  #073642
-set $background-active  #268bd2
-set $foreground  #93a1a1
-set $foreground-active  #073642
-set $alert  #bd2c40
-set $transparent  #FF00000
+set $background        #232136
+set $background-alt    #44415A
+set $foreground        #E0DEF4
+set $alert             #EB6F92
+set $transparent       #FF00000
 
 
-# target                 title     bg    text      indicator    border
-client.focused           $foreground-active   $background-alt $foreground  $background-alt $background-alt
-client.focused_inactive  $foreground $background  $foreground    $background-alt $background
-client.unfocused         $background $background  $foreground    $background-alt $background
-client.urgent            $foreground $alert  $foreground   $alert  $alert
-client.placeholder       $foreground $background  $foreground    $background  $background
-client.background        $background $background $background $background $background
+# target                 title                bg                text           indicator        border
+client.focused           $background          $background-alt   $foreground    $background-alt  $background-alt
+client.focused_inactive  $foreground          $background       $foreground    $background-alt  $background
+client.unfocused         $background          $background       $foreground    $background-alt  $background
+client.urgent            $foreground          $alert            $foreground    $alert           $alert
+client.placeholder       $foreground          $background       $foreground    $background      $background
+client.background        $background          $background       $background    $background      $background

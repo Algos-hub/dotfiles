@@ -2,35 +2,6 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		local solarized_palette = require("solarized.palette")
-		local colors = solarized_palette.get_colors()
-		local foreground = colors.base02
-
-		local custom_theme = {
-			normal = {
-				a = { fg = foreground, bg = colors.blue },
-				b = { fg = foreground, bg = colors.base1 },
-				c = { fg = colors.base2, bg = colors.base03 },
-			},
-			insert = {
-				a = { fg = foreground, bg = colors.green },
-			},
-			visual = {
-				a = { fg = foreground, bg = colors.magenta },
-			},
-			replace = {
-				a = { fg = foreground, bg = colors.red },
-			},
-			command = {
-				a = { fg = colors.base03, bg = colors.red },
-			},
-			inactive = {
-				a = { fg = foreground, bg = colors.base1 },
-				b = { fg = colors.base2, bg = colors.base04 },
-				c = { fg = colors.base04, bg = colors.base04 },
-			},
-		}
-
 		local hide_in_width = function()
 			return vim.fn.winwidth(0) > 80
 		end
@@ -81,18 +52,18 @@ return {
 		ins_config("c", {
 			{
 				"branch",
-				icon = { icons.git, color = { fg = colors.magenta } },
+				icon = { icons.git },
 				cond = hide_in_width,
 			},
 			{
 				"diff",
 				symbols = icons.diff,
 				colored = true,
-				diff_color = {
-					added = { fg = colors.green },
-					modified = { fg = colors.orange },
-					removed = { fg = colors.red },
-				},
+				-- diff_color = {
+				--     added = { fg = colors.green },
+				--     modified = { fg = colors.orange },
+				--     removed = { fg = colors.red },
+				-- },
 				cond = hide_in_width,
 			},
 		})
@@ -152,7 +123,7 @@ return {
 
 		require("lualine").setup({
 			options = {
-				theme = custom_theme,
+				-- theme = custom_theme,
 				component_separators = "",
 				section_separators = { left = icons.default.right, right = icons.default.left },
 				disabled_filetypes = {
