@@ -12,7 +12,7 @@
 set $mod Mod4
 
 exec --no-startup-id picom
-exec_always feh --bg-scale ~/wallpapers/wallpaper1.png
+exec_always feh --bg-scale ~/wallpapers/wallpaper2.jpg
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
