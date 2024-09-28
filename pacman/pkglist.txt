@@ -1,1221 +1,193 @@
-aalib 1.4rc5-18
-abseil-cpp 20240722.0-1
-accountsservice 23.13.9-2
-acl 2.3.2-1
-adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
-adwaita-cursors 47.0-1
-adwaita-icon-theme 47.0-1
-adwaita-icon-theme-legacy 46.2-3
-alsa-card-profiles 1:1.2.4-1
-alsa-lib 1.2.12-1
-alsa-topology-conf 1.2.5.1-4
-alsa-ucm-conf 1.2.12-1
-android-tools 35.0.2-4
-android-udev 20240829-1
-aom 3.10.0-1
-apache 2.4.62-1
-appstream 1.0.3-1
-apr 1.7.5-3
-apr-util 1.6.3-2
-archlinux-keyring 20240709-2
-argon2 20190702-6
-at-spi2-core 2.54.0-2
-attr 2.5.2-1
-audit 4.0.2-2
-autoconf 2.72-1
-automake 1.17-1
-avahi 1:0.8+r194+g3f79789-2
-baobab 47.0-1
-base 3-2
-base-devel 1-2
-bash 5.2.032-2
-bat 0.24.0-2
-binutils 2.43+r4+g7999dae6961-1
-bison 3.8.2-8
-blas 3.12.0-5
-blas64-openblas 0.3.28-1
-bluez 5.78-1
-bluez-libs 5.78-1
-bluez-utils 5.78-1
-bolt 0.9.8-1
-boost-libs 1.86.0-2
-brltty 6.6-11
-brotli 1.1.0-2
-bubblewrap 0.10.0-1
-bzip2 1.0.8-6
-c-ares 1.33.1-1
-ca-certificates 20240618-1
-ca-certificates-mozilla 3.104-1
-ca-certificates-utils 20240618-1
-cairo 1.18.2-1
-cairomm-1.16 1.18.0-1
-cantarell-fonts 1:0.303.1-2
-cdparanoia 10.2-9
-chromaprint 1.5.1-8
-chromium 129.0.6668.58-1
-cifs-utils 7.0-5
-clang 18.1.8-2
-cmake 3.30.3-2
-colord 1.4.7-2
-colord-gtk-common 0.3.1-1
-colord-gtk4 0.3.1-1
-colord-sane 1.4.7-2
-compiler-rt 18.1.8-1
-composefs 1.0.4-1
-composer 2.7.9-1
-confuse 3.3-4
-coreutils 9.5-2
-cppdap 1.58.0-2
-cracklib 2.10.2-1
-cryptsetup 2.7.5-1
-cups-pk-helper 0.2.7-2
-curl 8.10.1-1
-dav1d 1.4.3-1
-db5.3 5.3.28-5
-dbus 1.14.10-2
-dbus-broker 36-4
-dbus-broker-units 36-4
-dbus-units 36-4
-dconf 0.40.0-3
-debugedit 5.0-6
-default-cursors 3-1
-desktop-file-utils 0.27-1
-device-mapper 2.03.26-1
-diffutils 3.10-1
-djvulibre 3.5.28-6
-dkms 3.0.12-1
-dmenu 5.3-3
-dotconf 1.4.1-1
-dpkg 1.22.11-1
-duktape 2.7.0-7
-e2fsprogs 1.47.1-4
-editorconfig-core-c 0.12.9-1
-efibootmgr 18-3
-efivar 39-1
-egl-gbm 1.1.2-1
-egl-wayland 4:1.1.16-1
-eglexternalplatform 1.2-2
-electron32 32.1.2-1
-enchant 2.8.2-1
-epiphany 47.0-1
-evince 46.3.1-2
-evolution-data-server 3.54.0-1
-exempi 2.6.5-1
-exiv2 0.28.3-1
-expat 2.6.3-2
-faac 1.30-5
-faad2 2.11.1-1
-fakeroot 1.36-1
-fd 10.2.0-1
-feh 3.10.3-1
-ffmpeg 2:7.0.2-3
-fftw 3.3.10-7
-file 5.45-1
-filesystem 2024.04.07-1
-findutils 4.10.0-2
-flac 1.4.3-2
-flatpak 1:1.15.10-1
-flex 2.6.4-5
-fluidsynth 2.3.6-1
-fmt 11.0.2-1
-folks 0.15.9-1
-fontconfig 2:2.15.0-2
-freeglut 3.6.0-1
-freerdp 2:3.8.0-1
-freetype2 2.13.3-1
-fribidi 1.0.15-1
-fuse-common 3.16.2-1
-fuse3 3.16.2-1
-fzf 0.55.0-1
-gawk 5.3.1-1
-gc 8.2.8-2
-gcc 14.2.1+r134+gab884fffe3fc-1
-gcc-libs 14.2.1+r134+gab884fffe3fc-1
-gcr 3.41.2-2
-gcr-4 4.3.0-1
-gd 2.3.3-8
-gdb 15.1-1
-gdb-common 15.1-1
-gdbm 1.24-1
-gdk-pixbuf2 2.42.12-1
-gdm 47.0-1
-geoclue 2.7.2-1
-geocode-glib-2 3.26.4-4
-geocode-glib-common 3.26.4-4
-gettext 0.22.5-2
-ghc-libs 9.2.8-1
-ghostscript 10.04.0-1
-giflib 5.2.2-1
-git 2.46.1-1
-gjs 2:1.82.0-1
-glib-networking 1:2.80.0-3
-glib2 2.82.1-1
-glibc 2.40+r16+gaa533d58ff-2
-glibmm-2.68 2.82.0-1
-glslang 14.3.0-1
-glu 9.0.3-2
-glycin 1.1.1-2
-gmp 6.3.0-2
-gnome-app-list 1.0-1
-gnome-autoar 0.4.5-1
-gnome-backgrounds 47.0-1
-gnome-bluetooth-3.0 47.0-2
-gnome-calculator 47.0-1
-gnome-calendar 47.0-1
-gnome-characters 47.0-1
-gnome-clocks 47.0-1
-gnome-color-manager 3.36.0+r62+g82000f1d-1
-gnome-connections 47.0-1
-gnome-console 47.1-1
-gnome-contacts 47.0-1
-gnome-control-center 47.0.1-1
-gnome-desktop 1:44.1-1
-gnome-desktop-4 1:44.1-1
-gnome-desktop-common 1:44.1-1
-gnome-disk-utility 46.1-1
-gnome-font-viewer 47.0-1
-gnome-keybindings 47.0.1-1
-gnome-keyring 1:46.2-1
-gnome-logs 45.0-1
-gnome-maps 47.0-1
-gnome-menus 3.36.0-3
-gnome-music 1:47.0-1
-gnome-online-accounts 3.52.0-1
-gnome-remote-desktop 47.0-2
-gnome-screenshot 41.0+r39+ga362197-2
-gnome-session 47.0.1-1
-gnome-settings-daemon 47.1-1
-gnome-shell 1:47.0-1
-gnome-shell-extensions 47.0-1
-gnome-software 47.0-1
-gnome-system-monitor 47.0-2
-gnome-text-editor 47.0-1
-gnome-tour 47.0-1
-gnome-user-docs 47.0-1
-gnome-user-share 47.0-1
-gnome-weather 47.0-1
-gnupg 2.4.5-5
-gnutls 3.8.7-1
-go 2:1.23.1-1
-gobject-introspection-runtime 1.82.0-1
-gom 0.5.3-1
-gperftools 2.15-1
-gpgme 1.23.2-6
-gpm 1.20.7.r38.ge82d1a6-6
-graphene 1.10.8-1
-graphite 1:1.3.14-4
-grep 3.11-1
-grilo 0.3.16-1
-grilo-plugins 1:0.3.16-1
-groff 1.23.0-7
-gsettings-desktop-schemas 47.1-1
-gsettings-system-schemas 47.1-1
-gsfonts 20200910-4
-gsm 1.0.22-2
-gsound 1.0.3-3
-gspell 1.14.0-1
-gssdp 1.6.3-1
-gst-devtools-libs 1.24.8-1
-gst-editing-services 1.24.8-1
-gst-plugin-gtk 1.24.8-1
-gst-plugin-gtk4 0.13.1-2
-gst-plugin-pipewire 1:1.2.4-1
-gst-plugins-bad 1.24.8-1
-gst-plugins-bad-libs 1.24.8-1
-gst-plugins-base 1.24.8-1
-gst-plugins-base-libs 1.24.8-1
-gst-plugins-good 1.24.8-1
-gst-python 1.24.8-1
-gstreamer 1.24.8-1
-gtest 1.15.2-1
-gtk-update-icon-cache 1:4.16.1-1
-gtk-vnc 1.3.1-1
-gtk3 1:3.24.43-3
-gtk4 1:4.16.1-1
-gtkmm-4.0 4.16.0-1
-gtksourceview4 4.8.4-1
-gtksourceview5 5.14.0-1
-guile 3.0.10-1
-gupnp 1:1.6.6-1
-gupnp-av 0.14.1-2
-gupnp-dlna 0.12.0-3
-gupnp-igd 1.6.0-1
-gvfs 1.56.0-1
-gvfs-afc 1.56.0-1
-gvfs-dnssd 1.56.0-1
-gvfs-goa 1.56.0-1
-gvfs-google 1.56.0-1
-gvfs-gphoto2 1.56.0-1
-gvfs-mtp 1.56.0-1
-gvfs-nfs 1.56.0-1
-gvfs-onedrive 1.56.0-1
-gvfs-smb 1.56.0-1
-gvfs-wsdd 1.56.0-1
-gzip 1.13-4
-harfbuzz 9.0.0-1
-harfbuzz-icu 9.0.0-1
-haskell-aeson 2.1.2.1-53
-haskell-aeson-pretty 0.8.10-13
-haskell-ansi-terminal 0.11.5-2
-haskell-ansi-terminal-types 0.11.5-3
-haskell-ansi-wl-pprint 0.6.9-422
-haskell-appar 0.1.8-14
-haskell-asn1-encoding 0.9.6-232
-haskell-asn1-parse 0.9.5-232
-haskell-asn1-types 0.3.4-211
-haskell-assoc 1.0.2-278
-haskell-async 2.2.5-32
-haskell-attoparsec 0.14.4-76
-haskell-attoparsec-aeson 2.1.0.0-37
-haskell-attoparsec-iso8601 1.1.0.0-52
-haskell-auto-update 0.1.6-341
-haskell-base-compat 0.12.2-2
-haskell-base-compat-batteries 0.12.2-87
-haskell-base-orphans 0.8.8.2-17
-haskell-base-unicode-symbols 0.2.4.2-14
-haskell-base16-bytestring 1.0.2.0-82
-haskell-base64 0.4.2.4-73
-haskell-base64-bytestring 1.2.1.0-106
-haskell-basement 0.0.16-2
-haskell-bifunctors 5.6-89
-haskell-bitvec 1.1.3.0-100
-haskell-blaze-builder 0.4.2.3-2
-haskell-blaze-html 0.9.2.0-2
-haskell-blaze-markup 0.8.3.0-12
-haskell-boring 0.2.1-3
-haskell-bsb-http-chunked 0.0.0.4-385
-haskell-byteorder 1.0.4-25
-haskell-call-stack 0.4.0-188
-haskell-case-insensitive 1.2.1.0-205
-haskell-cassava 0.5.3.1-10
-haskell-cereal 0.5.8.3-2
-haskell-citeproc 0.8.1-115
-haskell-cmdargs 0.10.22-2
-haskell-colour 2.3.6-214
-haskell-commonmark 0.2.4.1-3
-haskell-commonmark-extensions 0.2.5.1-2
-haskell-commonmark-pandoc 0.2.1.3-89
-haskell-comonad 5.0.8-273
-haskell-conduit 1.3.5-63
-haskell-conduit-extra 1.3.6-141
-haskell-constraints 0.13.4-52
-haskell-contravariant 1.5.5-4
-haskell-cookie 0.4.6-2
-haskell-crypton 0.34-13
-haskell-crypton-connection 0.3.2-11
-haskell-crypton-x509 1.7.6-30
-haskell-crypton-x509-store 1.6.9-30
-haskell-crypton-x509-system 1.6.7-30
-haskell-crypton-x509-validation 1.6.12-30
-haskell-data-array-byte 0.1.0.1-59
-haskell-data-default 0.7.1.1-310
-haskell-data-default-class 0.1.2.0-25
-haskell-data-default-instances-containers 0.0.1-37
-haskell-data-default-instances-dlist 0.0.1-323
-haskell-data-default-instances-old-locale 0.0.1-37
-haskell-data-fix 0.3.2-104
-haskell-dec 0.0.5-5
-haskell-digest 0.0.1.7-2
-haskell-digits 0.3.1-23
-haskell-distributive 0.6.2.1-211
-haskell-dlist 1.0-245
-haskell-doclayout 0.4.0.1-31
-haskell-doctemplates 0.11-77
-haskell-easy-file 0.2.5-23
-haskell-emojis 0.1.3-12
-haskell-erf 2.0.0.0-25
-haskell-fast-logger 3.1.2-82
-haskell-file-embed 0.0.15.0-2
-haskell-foldable1-classes-compat 0.1-89
-haskell-generically 0.1.1-2
-haskell-ghc-bignum-orphans 0.1.1-2
-haskell-glob 0.10.2-92
-haskell-gridtables 0.1.0.0-50
-haskell-haddock-library 1.11.0-27
-haskell-hashable 1.4.4.0-6
-haskell-hourglass 0.2.12-248
-haskell-hslua 2.3.0-59
-haskell-hslua-aeson 2.3.0.1-41
-haskell-hslua-classes 2.3.0-60
-haskell-hslua-core 2.3.1-52
-haskell-hslua-list 1.1.1-67
-haskell-hslua-marshalling 2.3.1-12
-haskell-hslua-module-doclayout 1.1.0-68
-haskell-hslua-module-path 1.1.0-62
-haskell-hslua-module-system 1.1.0.1-34
-haskell-hslua-module-text 1.1.0.1-35
-haskell-hslua-module-version 1.1.0-65
-haskell-hslua-module-zip 1.1.1-29
-haskell-hslua-objectorientation 2.3.0-56
-haskell-hslua-packaging 2.3.1-21
-haskell-hslua-repl 0.1.2-18
-haskell-hslua-typing 0.1.1-14
-haskell-http-api-data 0.5.1-60
-haskell-http-client 0.7.16-1
-haskell-http-client-tls 0.3.6.3-67
-haskell-http-date 0.0.11-138
-haskell-http-media 0.8.1.1-16
-haskell-http-types 0.12.4-12
-haskell-http2 4.1.0-29
-haskell-hunit 1.6.2.0-231
-haskell-indexed-traversable 0.1.4-2
-haskell-indexed-traversable-instances 0.1.1.2-50
-haskell-integer-logarithms 1.0.3.1-7
-haskell-iproute 1.7.13-1
-haskell-ipynb 0.2-145
-haskell-isocline 1.0.9-2
-haskell-jira-wiki-markup 1.5.1-24
-haskell-juicypixels 3.3.8-33
-haskell-lexer 1.1.1-2
-haskell-libyaml 0.1.4-13
-haskell-lpeg 1.0.4-29
-haskell-lua 2.3.3-1
-haskell-memory 0.18.0-10
-haskell-mime-types 0.1.2.0-2
-haskell-mmorph 1.2.0-6
-haskell-monad-control 1.0.3.1-104
-haskell-mono-traversable 1.0.20.0-2
-haskell-network 3.1.4.0-22
-haskell-network-byte-order 0.1.7-2
-haskell-network-uri 2.6.4.2-33
-haskell-old-locale 1.0.0.7-31
-haskell-old-time 1.1.0.4-2
-haskell-onetuple 0.4.1-9
-haskell-only 0.1-23
-haskell-optparse-applicative 0.17.1.0-33
-haskell-ordered-containers 0.2.4-2
-haskell-os-string 2.0.6-3
-haskell-pandoc 3.1.9-15
-haskell-pandoc-lua-engine 0.2.1.2-42
-haskell-pandoc-lua-marshal 0.2.6-5
-haskell-pandoc-server 0.1.0.5-57
-haskell-pandoc-types 1.23.1-27
-haskell-pem 0.2.4-288
-haskell-pretty-show 1.10-15
-haskell-prettyprinter 1.7.1-171
-haskell-primitive 0.7.4.0-115
-haskell-psqueues 0.2.8.0-12
-haskell-quickcheck 2.14.3-70
-haskell-random 1.2.1.2-14
-haskell-recv 0.1.0-32
-haskell-regex-base 0.94.0.2-3
-haskell-regex-tdfa 1.3.2.2-46
-haskell-resourcet 1.2.6-53
-haskell-safe 0.3.21-7
-haskell-safe-exceptions 0.1.7.4-23
-haskell-scientific 0.3.7.0-115
-haskell-semialign 1.2.0.1-166
-haskell-semigroupoids 5.3.7-148
-haskell-servant 0.20.1-18
-haskell-servant-server 0.20-36
-haskell-sha 1.6.4.4-20
-haskell-simple-sendfile 0.2.32-43
-haskell-singleton-bool 0.1.7-3
-haskell-skylighting 0.14-23
-haskell-skylighting-core 0.14-22
-haskell-skylighting-format-ansi 0.1-130
-haskell-skylighting-format-blaze-html 0.1.1.2-17
-haskell-skylighting-format-context 0.1.0.2-94
-haskell-skylighting-format-latex 0.1-129
-haskell-socks 0.6.1-239
-haskell-some 1.0.5-2
-haskell-sop-core 0.5.0.2-2
-haskell-split 0.2.5-8
-haskell-splitmix 0.1.0.5-26
-haskell-statevar 1.2.2-3
-haskell-streaming-commons 0.2.2.6-28
-haskell-strict 0.4.0.1-252
-haskell-string-conversions 0.4.0.1-173
-haskell-syb 0.7.2.4-10
-haskell-tagged 0.8.8-2
-haskell-tagsoup 0.14.8-228
-haskell-temporary 1.3-592
-haskell-texmath 0.12.8.4-21
-haskell-text-conversions 0.3.1.1-65
-haskell-text-icu 0.8.0.5-4
-haskell-text-short 0.1.6-1
-haskell-th-abstraction 0.4.5.0-2
-haskell-th-compat 0.1.5-4
-haskell-th-lift 0.8.4-2
-haskell-th-lift-instances 0.1.20-49
-haskell-these 1.1.1.1-279
-haskell-time-compat 1.9.6.1-99
-haskell-time-manager 0.0.1-37
-haskell-tls 1.8.0-32
-haskell-toml-parser 1.3.1.3-24
-haskell-transformers-base 0.4.6-104
-haskell-transformers-compat 0.7.2-2
-haskell-type-equality 1.0.1-1
-haskell-typed-process 0.2.11.1-17
-haskell-typst 0.3.2.1-41
-haskell-typst-symbols 0.1.4-2
-haskell-unicode-collation 0.1.3.6-14
-haskell-unicode-data 0.4.0.1-35
-haskell-unicode-transforms 0.4.0.1-76
-haskell-uniplate 1.6.13-225
-haskell-unix-compat 0.7.1-24
-haskell-unix-time 0.4.14-1
-haskell-unliftio 0.2.25.0-12
-haskell-unliftio-core 0.2.1.0-2
-haskell-unordered-containers 0.2.20-20
-haskell-utf8-string 1.0.2-152
-haskell-uuid-types 1.0.5.1-18
-haskell-vault 0.3.1.5-187
-haskell-vector 0.13.1.0-36
-haskell-vector-algorithms 0.9.0.2-9
-haskell-vector-stream 0.1.0.1-2
-haskell-wai 3.2.4-25
-haskell-wai-app-static 3.1.9-27
-haskell-wai-cors 0.2.7-361
-haskell-wai-extra 3.1.15-21
-haskell-wai-logger 2.4.1-5
-haskell-warp 3.3.30-69
-haskell-witherable 0.4.2-107
-haskell-word8 0.1.3-23
-haskell-xml 1.3.14-31
-haskell-xml-conduit 1.9.1.3-62
-haskell-xml-types 0.3.8-9
-haskell-yaml 0.11.11.2-57
-haskell-zip-archive 0.4.3.2-4
-haskell-zlib 0.6.3.0-62
-hicolor-icon-theme 0.18-1
-hidapi 0.14.0-3
-highway 1.2.0-1
-hslua-cli 1.4.1-56
-http-parser 2.9.4-2
-hwdata 0.387-1
-hyphen 2.8.8-6
-i3-wm 4.23-4
-i3blocks 1.5-4
-i3lock 2.15-2
-i3status 2.15-1
-iana-etc 20240814-1
-icu 75.1-1
-iio-sensor-proxy 3.5-2
-ijs 0.35-6
-imagemagick 7.1.1.38-3
-imath 3.1.12-1
-imlib2 1.12.3-2
-intel-ucode 20240910-1
-iproute2 6.11.0-1
-iptables 1:1.8.10-2
-iputils 20240905-1
-iso-codes 4.17.0-1
-jansson 2.14-4
-java-environment-common 3-5
-java-runtime-common 3-5
-jbig2dec 0.20-1
-jbigkit 2.1-8
-jdk-openjdk 22.0.2.u9-1
-jq 1.7.1-2
-js128 128.2.0-1
-json-c 0.18-1
-json-glib 1.10.0-1
-jsoncpp 1.9.6-3
-julia 2:1.10.5-1
-kbd 2.6.4-3
-keyutils 1.6.3-3
-kitty 0.36.2-1
-kitty-shell-integration 0.36.2-1
-kitty-terminfo 0.36.2-1
-kmod 33-3
-krb5 1.21.3-1
-ktlint 1.3.1-2
-l-smash 2.14.5-4
-lame 3.100-5
-lapack 3.12.0-5
-lcms2 2.16-1
-ldb 2:4.21.0-2
-less 1:661-1
-lib32-brotli 1.1.0-1
-lib32-bzip2 1.0.8-4
-lib32-curl 8.10.1-1
-lib32-e2fsprogs 1.47.1-1
-lib32-expat 2.6.3-1
-lib32-gcc-libs 14.2.1+r134+gab884fffe3fc-1
-lib32-glibc 2.40+r16+gaa533d58ff-2
-lib32-icu 75.1-1
-lib32-keyutils 1.6.3-2
-lib32-krb5 1.21.3-1
-lib32-libdrm 2.4.123-1
-lib32-libelf 0.191-1
-lib32-libffi 3.4.6-1
-lib32-libglvnd 1.7.0-1
-lib32-libidn2 2.3.7-1
-lib32-libldap 2.6.8-1
-lib32-libnghttp2 1.63.0-1
-lib32-libnghttp3 1.5.0-1
-lib32-libpciaccess 0.18.1-1
-lib32-libpsl 0.21.5-1
-lib32-libssh2 1.11.0-2
-lib32-libunistring 1.2-1
-lib32-libx11 1.8.10-1
-lib32-libxau 1.0.11-2
-lib32-libxcb 1.17.0-1
-lib32-libxcrypt 4.4.36-2
-lib32-libxdmcp 1.1.5-1
-lib32-libxext 1.3.6-1
-lib32-libxfixes 6.0.1-2
-lib32-libxml2 2.13.4-1
-lib32-libxshmfence 1.3.2-2
-lib32-libxxf86vm 1.1.5-2
-lib32-llvm-libs 18.1.8-1
-lib32-lm_sensors 1:3.6.0.r41.g31d1f125-3
-lib32-mesa 1:24.2.3-1
-lib32-ncurses 6.5-1
-lib32-nvidia-utils 560.35.03-1
-lib32-openssl 1:3.3.2-1
-lib32-wayland 1.23.1-1
-lib32-xz 5.6.2-1
-lib32-zlib 1.3.1-1
-lib32-zstd 1.5.6-1
-libadwaita 1:1.6.0-1
-libao 1.2.2-6
-libarchive 3.7.5-1
-libass 0.17.3-1
-libassuan 3.0.0-1
-libasyncns 1:0.8+r3+g68cd5af-3
-libatasmart 0.19-6
-libavc1394 0.5.4-6
-libavif 1.1.1-2
-libavtp 0.2.0-3
-libblastrampoline 5.11.0-1
-libblockdev 3.1.1-2
-libblockdev-crypto 3.1.1-2
-libblockdev-fs 3.1.1-2
-libblockdev-loop 3.1.1-2
-libblockdev-mdraid 3.1.1-2
-libblockdev-nvme 3.1.1-2
-libblockdev-part 3.1.1-2
-libblockdev-swap 3.1.1-2
-libbluray 1.3.4-2
-libbpf 1.4.3-1
-libbs2b 3.1.0-9
-libbsd 0.12.2-2
-libbytesize 2.8-3
-libcaca 0.99.beta20-4
-libcanberra 1:0.30+r2+gc0620e4-4
-libcap 2.70-1
-libcap-ng 0.8.5-2
-libcdio 2.1.0-4
-libcdio-paranoia 10.2+2.0.2-1
-libcloudproviders 0.3.6-1
-libcolord 1.4.7-2
-libconfig 1.7.3-3
-libcue 2.3.0-1
-libcups 2:2.4.10-1
-libdaemon 0.14-6
-libdatrie 0.2.13-4
-libdc1394 2.2.7-1
-libdca 0.0.7-2
-libde265 1.0.15-2
-libdeflate 1.21-1
-libdisplay-info 0.2.0-1
-libdmapsharing 3.9.13-1
-libdovi 3.3.1-1
-libdrm 2.4.123-1
-libdv 1.0.0-11
-libdvdnav 6.1.1-2
-libdvdread 6.1.3-2
-libedataserverui4 3.54.0-1
-libedit 20240517_3.1-1
-libei 1.3.0-1
-libelf 0.191-4
-libepoxy 1.5.10-3
-libev 4.33-3
-libevdev 1.13.3-1
-libevent 2.1.12-4
-libexif 0.6.24-3
-libfdk-aac 2.0.3-1
-libffi 3.4.6-1
-libfontenc 1.1.8-1
-libfreeaptx 0.1.1-2
-libgcrypt 1.11.0-2
-libgdata 0.18.1-3
-libgdm 47.0-1
-libgee 0.20.6-2
-libgexiv2 0.14.3-1
-libgirepository 1.82.0-1
-libgit2 1:1.8.1-1
-libglvnd 1.7.0-1
-libgme 0.6.3-5
-libgoa 3.52.0-1
-libgpg-error 1.50-1
-libgphoto2 2.5.31-2
-libgsf 1.14.52-1
-libgtop 2.41.3-2
-libgudev 238-1
-libgusb 0.4.9-1
-libgweather-4 4.4.4-1
-libgxps 0.3.2-5
-libhandy 1.8.3-2
-libheif 1.18.2-2
-libibus 1.5.30-3
-libical 3.0.18-2
-libice 1.1.1-3
-libidn 1.42-1
-libidn2 2.3.7-1
-libiec61883 1.2.0-8
-libieee1284 0.2.11-16
-libimobiledevice 1.3.0-14
-libimobiledevice-glue 1.3.0-1
-libinih 58-1
-libinput 1.26.2-1
-libinstpatch 1.1.6-3
-libiptcdata 1.0.5-3
-libisl 0.27-1
-libjpeg-turbo 3.0.4-1
-libjxl 0.11.0-1
-libksba 1.6.7-1
-liblc3 1.1.1-1
-libldac 2.0.2.3-2
-libldap 2.6.8-2
-libliftoff 0.5.0-1
-liblouis 3.31.0-1
-liblqr 0.4.3-1
-liblrdf 0.6.1-5
-libltc 1.3.2-2
-libluv 1.48.0_2-1
-libmalcontent 0.12.0-1
-libmanette 0.2.9-1
-libmd 1.1.0-2
-libmediaart 1.9.6-3
-libmicrodns 0.2.0-2
-libmm-glib 1.22.0-1
-libmnl 1.0.5-2
-libmodplug 0.8.9.0-6
-libmpc 1.3.1-2
-libmpcdec 1:0.1+r475-6
-libmpdclient 2.22-1
-libmtp 1.1.21-2
-libmysofa 1.3.2-1
-libnautilus-extension 47.0-2
-libndp 1.9-1
-libnet 2:1.3-1
-libnetfilter_conntrack 1.0.9-2
-libnewt 0.52.24-2
-libnfnetlink 1.0.2-2
-libnfs 5.0.3-1
-libnftnl 1.2.7-1
-libnghttp2 1.63.0-1
-libnghttp3 1.5.0-1
-libngtcp2 1.7.0-2
-libnice 0.1.22-1
-libnl 3.10.0-1
-libnm 1.48.10-1
-libnma-common 1.10.6-3
-libnma-gtk4 1.10.6-3
-libnotify 0.8.3-1
-libnsl 2.0.1-1
-libnvme 1.10-1
-liboauth 1:1.0.3+r16+gc26f038-2
-libogg 1.3.5-2
-libomxil-bellagio 0.9.3-5
-libopenmpt 0.7.9-1
-libosinfo 1.11.0-3
-libp11-kit 0.25.5-1
-libpaper 2.2.5-1
-libpcap 1.10.5-2
-libpciaccess 0.18.1-2
-libpeas 1.36.0-5
-libpgm 5.3.128-3
-libphonenumber 1:8.13.45-2
-libpipeline 1.5.8-1
-libpipewire 1:1.2.4-1
-libplacebo 7.349.0-2
-libplist 2.6.0-1
-libpng 1.6.44-1
-libportal 0.8.1-1
-libportal-gtk3 0.8.1-1
-libportal-gtk4 0.8.1-1
-libproxy 0.5.8-1
-libpsl 0.21.5-2
-libpulse 17.0-3
-libpwquality 1.4.5-5
-libraqm 0.10.2-1
-libraw1394 2.1.2-4
-librest 0.9.1-2
-librsvg 2:2.59.0-1
-librsync 1:2.3.4-2
-libsamplerate 0.2.2-3
-libsasl 2.1.28-5
-libseccomp 2.5.5-3
-libsecret 0.21.4-1
-libshout 1:2.4.6-3
-libshumate 1.3.0-1
-libsigc++-3.0 3.6.0-1
-libsm 1.2.4-2
-libsndfile 1.2.2-2
-libsodium 1.0.20-1
-libsoup 2.74.3-1
-libsoup3 3.6.0-1
-libsoxr 0.1.3-4
-libspectre 0.2.12-2
-libspeechd 0.11.5-2
-libspelling 0.4.0-1
-libsrtp 1:2.6.0-1
-libssh 0.11.1-1
-libssh2 1.11.0-1
-libstemmer 2.2.0-2
-libsynctex 2024.2-3
-libsysprof-capture 47.0-1
-libtasn1 4.19.0-2
-libteam 1.32-2
-libthai 0.1.29-3
-libtheora 1.1.1-6
-libtiff 4.7.0-1
-libtirpc 1.3.5-1
-libtool 2.5.2+r1+g2fe3a3e2-1
-libunibreak 6.1-1
-libunistring 1.2-1
-libunwind 1.8.1-3
-libusb 1.0.27-1
-libusbmuxd 2.1.0-1
-libutempter 1.2.1-4
-libutf8proc 2.9.0-1
-libuv 1.48.0-2
-libva 2.22.0-1
-libvdpau 1.5-3
-libverto 0.3.2-5
-libvncserver 0.9.14-3
-libvorbis 1.3.7-3
-libvpl 2.13.0-1
-libvpx 1.14.1-1
-libvterm 0.3.3-2
-libwacom 2.13.0-1
-libwbclient 2:4.21.0-2
-libwebp 1.4.0-2
-libwireplumber 0.5.6-1
-libwnck3 43.0-3
-libx11 1.8.10-1
-libxau 1.0.11-3
-libxcb 1.17.0-1
-libxcomposite 0.4.6-2
-libxcrypt 4.4.36-2
-libxcursor 1.2.2-1
-libxcvt 0.1.2-2
-libxdamage 1.1.6-2
-libxdg-basedir 1.2.3-2
-libxdmcp 1.1.5-1
-libxext 1.3.6-1
-libxfixes 6.0.1-2
-libxfont2 2.0.7-1
-libxft 2.3.8-2
-libxi 1.8.2-1
-libxinerama 1.1.5-2
-libxkbcommon 1.7.0-2
-libxkbcommon-x11 1.7.0-2
-libxkbfile 1.1.3-1
-libxml2 2.13.4-1
-libxmlb 0.3.19-1
-libxmu 1.2.1-1
-libxnvctrl 560.35.03-1
-libxpm 3.5.17-2
-libxrandr 1.5.4-1
-libxrender 0.9.11-2
-libxres 1.2.2-2
-libxshmfence 1.3.2-2
-libxslt 1.1.42-1
-libxss 1.2.4-2
-libxt 1.3.0-2
-libxtst 1.2.5-1
-libxv 1.0.12-2
-libxxf86vm 1.1.5-2
-libyaml 0.2.5-3
-libyuv r2426+464c51a0-1
-libzip 1.10.1-2
-licenses 20240728-1
-lilv 0.24.24-2
-linux 6.10.10.arch1-1
-linux-api-headers 6.10-1
-linux-firmware 20240909.552ed9b8-1
-linux-firmware-whence 20240909.552ed9b8-1
-lld 18.1.8-1
-llvm-julia-libs 15.0.7.10-2
-llvm-libs 18.1.8-4
-lm_sensors 1:3.6.0.r41.g31d1f125-3
-lmdb 0.9.33-1
-localsearch 3.8.0-1
-loupe 47.0-1
-lua 5.4.7-1
-lua-lpeg 1.1.0-2
-lua51-lpeg 1.1.0-2
-luajit 2.1.1725453128-1
-luarocks 3.11.1-1
-lv2 1.18.10-1
-lz4 1:1.10.0-2
-lzo 2.10-5
-m4 1.4.19-3
-make 4.4.1-2
-malcontent 0.12.0-1
-man-db 2.13.0-1
-mbedtls2 2.28.8-3
-mdadm 4.3-2
-mesa 1:24.2.3-1
-meson 1.5.2-1
-minizip 1:1.3.1-2
-mjpegtools 2.2.1-2
-mkinitcpio 39.2-2
-mkinitcpio-busybox 1.36.1-1
-mobile-broadband-provider-info 20240407-1
-mod_dnssd 0.6-9
-mpdecimal 4.0.0-2
-mpfr 4.2.1-4
-mpg123 1.32.7-1
-msgpack-c 6.1.0-2
-msgraph 0.2.3-2
-mtdev 1.1.7-1
-mutter 47.0-2
-nautilus 47.0-2
-ncurses 6.5-3
-neofetch 7.1.0-2
-neon 0.33.0-1
-neovim 0.10.1-5
-net-snmp 5.9.4-5
-nettle 3.10-1
-networkmanager 1.48.10-1
-ninja 1.12.1-1
-node-gyp 10.2.0-1
-nodejs 22.9.0-1
-nodejs-nopt 7.2.0-2
-noto-fonts-emoji 1:2.042-1
-npm 10.8.3-1
-npth 1.7-1
-nspr 4.35-3
-nss 3.104-1
-numactl 2.0.18-1
-nvidia 560.35.03-6
-nvidia-settings 560.35.03-1
-nvidia-utils 560.35.03-3
-ocl-icd 2.3.2-2
-oniguruma 6.9.9-1
-openal 1.23.1-2
-openblas64 0.3.28-1
-opencore-amr 0.1.6-2
-openexr 3.2.4-1
-openjpeg2 2.5.2-1
-openlibm 0.8.3-1
-openssh 9.9p1-1
-openssl 3.3.2-1
-opus 1.5.2-1
-orc 0.4.40-1
-orca 47.0-1
-osinfo-db 20240701-1
-ostree 2024.8-1
-otf-aurulent-nerd 3.2.1-2
-otf-codenewroman-nerd 3.2.1-2
-otf-comicshanns-nerd 3.2.1-2
-otf-commit-mono-nerd 3.2.1-2
-otf-droid-nerd 3.2.1-2
-otf-firamono-nerd 3.2.1-2
-otf-geist-mono-nerd 3.2.1-2
-otf-hasklig-nerd 3.2.1-2
-otf-hermit-nerd 3.2.1-2
-otf-monaspace-nerd 3.2.1-2
-otf-opendyslexic-nerd 3.2.1-2
-otf-overpass-nerd 3.2.1-2
-p11-kit 0.25.5-1
-p7zip 1:17.05-2
-pacman 7.0.0.r3.g7736133-1
-pacman-mirrorlist 20240717-1
-pam 1.6.1-3
-pambase 20230918-2
-pandoc-cli 0.1.1.1-134
-pango 1:1.54.0-1
-pangomm-2.48 2.54.0-1
-parted 3.6-2
-patch 2.7.6-10
-pciutils 3.13.0-2
-pcre 8.45-4
-pcre2 10.44-1
-pcsclite 2.3.0-1
-perl 5.40.0-1
-perl-error 0.17029-7
-perl-mailtools 2.21-9
-perl-timedate 2.33-7
-php 8.3.11-1
-php-sodium 8.3.11-1
-picom 11.2-1
-pinentry 1.3.1-5
-pipewire 1:1.2.4-1
-pipewire-alsa 1:1.2.4-1
-pipewire-audio 1:1.2.4-1
-pipewire-jack 1:1.2.4-1
-pipewire-pulse 1:1.2.4-1
-pixman 0.43.4-1
-pkgconf 2.1.1-1
-pnpm 9.11.0-1
-polkit 125-1
-polybar 3.7.2-2
-poppler 24.09.0-2
-poppler-data 0.4.12-2
-poppler-glib 24.09.0-2
-popt 1.19-2
-portaudio 1:19.7.0-3
-prettierd 0.25.3-1
-pretty-php 0.4.72-1
-procps-ng 4.0.4-3
-protobuf 28.1-1
-protobuf-c 1.5.0-6
-psmisc 23.7-1
-pugixml 1.14-1
-python 3.12.6-1
-python-appdirs 1.4.4-10
-python-attrs 23.2.0-3
-python-black 24.8.0-1
-python-cairo 1.27.0-1
-python-cffi 1.16.0-2
-python-chardet 5.2.0-2
-python-click 8.1.7-3
-python-colorama 0.4.6-3
-python-cryptography 42.0.7-1
-python-defusedxml 0.7.1-6
-python-diff-cover 9.2.0-1
-python-filelock 3.13.3-2
-python-gobject 3.50.0-1
-python-greenlet 3.1.0-1
-python-iniconfig 2.0.0-5
-python-jinja 1:3.1.4-1
-python-markupsafe 2.1.5-2
-python-msgpack 1.0.5-2
-python-mypy_extensions 1.0.0-4
-python-packaging 24.1-1
-python-pathspec 0.12.1-2
-python-pip 24.2-1
-python-platformdirs 4.2.2-1
-python-pluggy 1.5.0-1
-python-psutil 6.0.0-1
-python-pycparser 2.22-2
-python-pygments 2.18.0-1
-python-pynvim 0.5.0-3
-python-pytest 1:8.3.3-1
-python-pyxdg 0.28-3
-python-regex 2024.7.24-1
-python-setproctitle 1.3.3-2
-python-six 1.16.0-9
-python-tblib 1.7.0-7
-python-toml 0.10.2-10
-python-tqdm 4.66.5-1
-python-wheel 0.44.0-1
-python-yaml 6.0.2-1
-qrencode 4.1.1-3
-raptor 2.0.16-5
-rav1e 0.7.1-1
-readline 8.2.013-1
-rhash 1.4.4-1
-ripgrep 14.1.1-1
-rofi 1.7.5-3
-rtkit 0.13-3
-rtmpdump 1:2.4.r105.6f6bb13-1
-rubberband 3.3.0-2
-ruby 3.2.5-2
-rubygems 3.4.19-1
-rust 1:1.81.0-1
-rygel 1:0.44.0-1
-sane 1.3.1-1
-sbc 2.0-2
-scdoc 1.11.3-1
-sdl2 2.30.7-1
-sdl2_ttf 2.22.0-1
-seatd 0.8.0-2
-sed 4.9-3
-semver 7.6.3-1
-serd 0.32.2-1
-shaderc 2024.2-1
-shadow 4.16.0-1
-shared-mime-info 2.4-1
-simple-scan 46.0-2
-sl 5.05-5
-slang 2.3.3-3
-smbclient 2:4.21.0-2
-snappy 1.1.10-1
-snapshot 47.0.1-2
-sord 0.16.16-1
-sound-theme-freedesktop 0.8-6
-soundtouch 2.3.3-1
-source-highlight 3.1.9-13
-spandsp 0.0.6-5
-speech-dispatcher 0.11.5-2
-speex 1.2.1-2
-speexdsp 1.2.1-2
-spirv-tools 2024.2-1
-sqlfluff 3.1.1-1
-sqlite 3.46.1-1
-sratom 0.6.16-1
-srt 1.5.3-2
-startup-notification 0.12-8
-stow 2.4.1-1
-stylua 0.20.0-3
-sudo 1.9.16-1
-suitesparse 7.8.2-1
-sushi 46.0-2
-svt-av1 2.2.1-1
-svt-hevc 1.5.1-3
-systemd 256.6-1
-systemd-libs 256.6-1
-systemd-sysvcompat 256.6-1
-taglib 2.0.2-1
-talloc 2.4.2-3
-tar 1.35-2
-tdb 1.4.12-1
-tecla 47.0-1
-tevent 1:0.16.1-3
-texinfo 7.1.1-1
-tinysparql 3.8.0-1
-tmux 3.4-10
-tomlplusplus 3.4.0-1
-totem 43.0-3
-totem-pl-parser 3.26.6+r30+g51b8439-1
-tpm2-tss 4.0.1-1
-tree-sitter 0.23.0-1
-tree-sitter-c 0.23.0-1
-tree-sitter-cli 0.23.0-1
-tree-sitter-lua 0.2.0-1
-tree-sitter-markdown 0.3.1-1
-tree-sitter-query 0.4.0-1
-tree-sitter-vim 0.4.0-1
-tree-sitter-vimdoc 3.0.0-1
-ttf-0xproto-nerd 3.2.1-2
-ttf-3270-nerd 3.2.1-2
-ttf-agave-nerd 3.2.1-2
-ttf-anonymouspro-nerd 3.2.1-2
-ttf-arimo-nerd 3.2.1-2
-ttf-bigblueterminal-nerd 3.2.1-2
-ttf-bitstream-vera-mono-nerd 3.2.1-2
-ttf-cascadia-code-nerd 3.2.1-2
-ttf-cascadia-mono-nerd 3.2.1-2
-ttf-cousine-nerd 3.2.1-2
-ttf-d2coding-nerd 3.2.1-2
-ttf-daddytime-mono-nerd 3.2.1-2
-ttf-dejavu-nerd 3.2.1-2
-ttf-envycoder-nerd 3.2.1-2
-ttf-fantasque-nerd 3.2.1-2
-ttf-firacode-nerd 3.2.1-2
-ttf-go-nerd 3.2.1-2
-ttf-gohu-nerd 3.2.1-2
-ttf-hack-nerd 3.2.1-2
-ttf-heavydata-nerd 3.2.1-2
-ttf-iawriter-nerd 3.2.1-2
-ttf-ibmplex-mono-nerd 3.2.1-2
-ttf-inconsolata-go-nerd 3.2.1-2
-ttf-inconsolata-lgc-nerd 3.2.1-2
-ttf-inconsolata-nerd 3.2.1-2
-ttf-intone-nerd 3.2.1-2
-ttf-iosevka-nerd 3.2.1-2
-ttf-iosevkaterm-nerd 3.2.1-2
-ttf-iosevkatermslab-nerd 3.2.1-2
-ttf-jetbrains-mono-nerd 3.2.1-2
-ttf-lekton-nerd 3.2.1-2
-ttf-liberation 2.1.5-2
-ttf-liberation-mono-nerd 3.2.1-2
-ttf-lilex-nerd 3.2.1-2
-ttf-martian-mono-nerd 3.2.1-2
-ttf-meslo-nerd 3.2.1-2
-ttf-monofur-nerd 3.2.1-2
-ttf-monoid-nerd 3.2.1-2
-ttf-mononoki-nerd 3.2.1-2
-ttf-mplus-nerd 3.2.1-2
-ttf-nerd-fonts-symbols 3.2.1-1
-ttf-nerd-fonts-symbols-common 3.2.1-1
-ttf-nerd-fonts-symbols-mono 3.2.1-1
-ttf-noto-nerd 3.2.1-2
-ttf-profont-nerd 3.2.1-2
-ttf-proggyclean-nerd 3.2.1-2
-ttf-recursive-nerd 3.2.1-2
-ttf-roboto-mono-nerd 3.2.1-2
-ttf-sharetech-mono-nerd 3.2.1-2
-ttf-sourcecodepro-nerd 3.2.1-2
-ttf-space-mono-nerd 3.2.1-2
-ttf-terminus-nerd 3.2.1-2
-ttf-tinos-nerd 3.2.1-2
-ttf-ubuntu-mono-nerd 3.2.1-2
-ttf-ubuntu-nerd 3.2.1-2
-ttf-victor-mono-nerd 3.2.1-2
-ttf-zed-mono-nerd 3.2.1-2
-twolame 0.4.0-4
-tzdata 2024b-2
-uchardet 0.0.8-3
-udisks2 2.10.1-5
-unibilium 2.1.1-2
-unzip 6.0-21
-upower 1.90.6-1
-usbmuxd 1.1.1-4
-util-linux 2.40.2-1
-util-linux-libs 2.40.2-1
-v4l-utils 1.28.1-1
-vapoursynth R69-1
-vid.stab 1.1.1-2
-vmaf 3.0.0-1
-volume_key 0.3.12-9
-vte-common 0.78.0-1
-vte4 0.78.0-1
-vulkan-headers 1:1.3.295-1
-vulkan-icd-loader 1.3.295-1
-vulkan-validation-layers 1.3.290-2
-wavpack 5.7.0-1
-wayland 1.23.1-1
-wayland-protocols 1.37-1
-webkit2gtk-4.1 2.46.0-2
-webkitgtk-6.0 2.46.0-2
-webrtc-audio-processing-1 1.3-3
-wget 1.24.5-3
-which 2.21-6
-wildmidi 0.4.6-1
-wireplumber 0.5.6-1
-woff2 1.0.2-5
-wpa_supplicant 2:2.11-2
-wsdd 0.8-2
-x264 3:0.164.r3108.31e19f9-2
-x265 3.6-1
-xcb-proto 1.17.0-2
-xcb-util 0.4.1-2
-xcb-util-cursor 0.1.5-1
-xcb-util-errors 1.0.1-2
-xcb-util-image 0.4.1-3
-xcb-util-keysyms 0.4.1-5
-xcb-util-renderutil 0.3.10-2
-xcb-util-wm 0.4.2-2
-xcb-util-xrm 1.3-3
-xclip 0.13-5
-xdg-dbus-proxy 0.1.6-1
-xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-gnome 47.1-1
-xdg-desktop-portal-gtk 1.15.1-2
-xdg-user-dirs 0.18-2
-xdg-user-dirs-gtk 0.11-3
-xdg-utils 1.2.1-1
-xf86-input-libinput 1.4.0-2
-xkeyboard-config 2.42-1
-xorg-fonts-encodings 1.1.0-1
-xorg-server 21.1.13-1
-xorg-server-common 21.1.13-1
-xorg-setxkbmap 1.3.4-2
-xorg-xinput 1.6.4-2
-xorg-xkbcomp 1.4.7-1
-xorg-xmodmap 1.0.11-2
-xorg-xprop 1.2.7-1
-xorg-xrandr 1.5.2-2
-xorg-xrdb 1.2.2-2
-xorg-xset 1.2.5-2
-xorg-xwayland 24.1.2-1
-xorgproto 2024.1-2
-xvidcore 1.3.7-3
-xxhash 0.8.2-1
-xz 5.6.2-1
-yajl 2.1.0-6
-yay 12.4.2-1
-yay-debug 12.4.2-1
-yelp 42.2-2
-yelp-xsl 42.1-2
-youtube-music 3.5.3-1
-zbar 0.23.93-1
-zeromq 4.3.5-2
-zimg 3.0.5-1
-zip 3.0-11
-zix 0.4.2-2
-zlib 1:1.3.1-2
-zram-generator 1.1.2-1
-zsh 5.9-5
-zstd 1.5.6-1
-zvbi 0.2.42-1
-zxing-cpp 2.2.1-1
+android-tools
+baobab
+base
+base-devel
+bat
+bluez-utils
+chromium
+clang
+cmake
+dmenu
+dpkg
+efibootmgr
+epiphany
+evince
+fd
+feh
+fzf
+gdm
+git
+glfw
+gnome-backgrounds
+gnome-calculator
+gnome-calendar
+gnome-characters
+gnome-clocks
+gnome-color-manager
+gnome-connections
+gnome-console
+gnome-contacts
+gnome-control-center
+gnome-disk-utility
+gnome-font-viewer
+gnome-keyring
+gnome-logs
+gnome-maps
+gnome-menus
+gnome-music
+gnome-remote-desktop
+gnome-screenshot
+gnome-session
+gnome-settings-daemon
+gnome-shell
+gnome-shell-extensions
+gnome-software
+gnome-system-monitor
+gnome-text-editor
+gnome-tour
+gnome-user-docs
+gnome-user-share
+gnome-weather
+grilo-plugins
+gst-plugin-pipewire
+gvfs
+gvfs-afc
+gvfs-dnssd
+gvfs-goa
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-onedrive
+gvfs-smb
+gvfs-wsdd
+i3-wm
+i3blocks
+i3lock
+i3status
+intel-ucode
+julia
+kitty
+ktlint
+lib32-nvidia-utils
+libpulse
+linux
+linux-firmware
+loupe
+luarocks
+malcontent
+man-db
+nautilus
+neofetch
+neovim
+networkmanager
+nodejs
+npm
+nvidia
+nvidia-settings
+orca
+otf-aurulent-nerd
+otf-codenewroman-nerd
+otf-comicshanns-nerd
+otf-commit-mono-nerd
+otf-droid-nerd
+otf-firamono-nerd
+otf-geist-mono-nerd
+otf-hasklig-nerd
+otf-hermit-nerd
+otf-monaspace-nerd
+otf-opendyslexic-nerd
+otf-overpass-nerd
+php
+picom
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+polybar
+python-black
+python-pip
+python-pynvim
+raylib
+ripgrep
+rofi
+ruby
+rust
+rygel
+scdoc
+simple-scan
+sl
+snapshot
+sqlfluff
+steam
+stow
+stylua
+sushi
+tecla
+tmux
+totem
+tree-sitter-cli
+ttf-0xproto-nerd
+ttf-3270-nerd
+ttf-agave-nerd
+ttf-anonymouspro-nerd
+ttf-arimo-nerd
+ttf-bigblueterminal-nerd
+ttf-bitstream-vera-mono-nerd
+ttf-cascadia-code-nerd
+ttf-cascadia-mono-nerd
+ttf-cousine-nerd
+ttf-d2coding-nerd
+ttf-daddytime-mono-nerd
+ttf-dejavu-nerd
+ttf-envycoder-nerd
+ttf-fantasque-nerd
+ttf-firacode-nerd
+ttf-go-nerd
+ttf-gohu-nerd
+ttf-hack-nerd
+ttf-heavydata-nerd
+ttf-iawriter-nerd
+ttf-ibmplex-mono-nerd
+ttf-inconsolata-go-nerd
+ttf-inconsolata-lgc-nerd
+ttf-inconsolata-nerd
+ttf-intone-nerd
+ttf-iosevka-nerd
+ttf-iosevkaterm-nerd
+ttf-iosevkatermslab-nerd
+ttf-jetbrains-mono-nerd
+ttf-lekton-nerd
+ttf-liberation-mono-nerd
+ttf-lilex-nerd
+ttf-martian-mono-nerd
+ttf-meslo-nerd
+ttf-monofur-nerd
+ttf-monoid-nerd
+ttf-mononoki-nerd
+ttf-mplus-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
+ttf-noto-nerd
+ttf-profont-nerd
+ttf-proggyclean-nerd
+ttf-recursive-nerd
+ttf-roboto-mono-nerd
+ttf-sharetech-mono-nerd
+ttf-sourcecodepro-nerd
+ttf-space-mono-nerd
+ttf-terminus-nerd
+ttf-tinos-nerd
+ttf-ubuntu-mono-nerd
+ttf-ubuntu-nerd
+ttf-victor-mono-nerd
+ttf-zed-mono-nerd
+wget
+wireplumber
+xclip
+xdg-desktop-portal-gnome
+xdg-user-dirs-gtk
+xorg-server
+yelp
+zram-generator
+zsh
