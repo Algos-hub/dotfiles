@@ -15,6 +15,8 @@ exec --no-startup-id picom
 exec_always feh --bg-scale ~/wallpapers/wallpaper2.jpg
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
+exec "setxkbmap -layout us,fr"
+exec "setxkbmap -option 'grp:alt_shift_toggle'"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
