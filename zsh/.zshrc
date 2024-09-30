@@ -17,7 +17,7 @@ eval "$(fzf --zsh)"
 
 alias fzf='fzf -m --preview="bat --color=always {}"'
 alias clear="clear && printf '\n%.0s' {1..$LINES}"
-alias ls="ls -lahtrG --color=always"
+alias ls="ls -lAhtrG --color=always"
 alias grep="grep --color=always"
 
 export CLICOLOR=1
