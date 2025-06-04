@@ -19,7 +19,7 @@
   "hyprland/window": {
     "format": "{}",
     "icon": true,
-    "max-length": 55,
+    "max-length": 50,
   },
   "keyboard-state": {
     "numlock": false,
