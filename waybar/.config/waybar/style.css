@@ -1,0 +1,91 @@
+@import "./rose-pine-moon.css";
+
+* {
+  border: none;
+  border-radius: 10px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 15px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+  color: white;
+}
+
+#window {
+  background: @base;
+  padding: 0 15px;
+}
+
+window#waybar.empty #window {
+  background: none;
+}
+
+#workspaces {
+  background: @base;
+}
+
+#workspaces button {
+  background: transparent;
+  color: white;
+}
+
+#workspaces button.active {
+  background: @overlay;
+}
+
+#keyboard-state label,
+#memory,
+#pulseaudio,
+#network,
+#cpu,
+#clock {
+  padding: 0 20px 0 15px;
+  background: @base;
+}
+
+#clock {
+  padding: 0 10px;
+}
+
+#cpu {
+  color: @foam;
+}
+
+#memory {
+  color: @iris;
+}
+
+#network {
+  color: @pine;
+}
+
+#keyboard-state label.locked {
+  background: @rose;
+  color: black;
+}
+
+#pulseaudio {
+  color: @rose;
+}
+#pulseaudio.muted {
+  color: black;
+  background: @love;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: black;
+  }
+}

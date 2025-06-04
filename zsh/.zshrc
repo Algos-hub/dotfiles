@@ -25,3 +25,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export LANG=en_US.UTF-8
 . "$HOME/.cargo/env"
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+export PATH="$HOME/.symfony5/bin:$PATH"
+export PATH="$HOME/.local/share/applications:$PATH"
+export PATH="$HOME/Desktop:$PATH"
