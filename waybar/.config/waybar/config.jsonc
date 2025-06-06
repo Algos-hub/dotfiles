@@ -14,7 +14,6 @@
     "network",
     "keyboard-state",
     "clock",
-    "tray",
   ],
   "hyprland/window": {
     "format": "{}",
@@ -30,9 +29,6 @@
       "unlocked": "",
     },
     "device-path": "/dev/input/event19",
-  },
-  "tray": {
-    "spacing": 5,
   },
   "clock": {
     "interval": 1,
