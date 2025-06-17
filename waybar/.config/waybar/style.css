@@ -13,22 +13,25 @@ window#waybar {
   color: white;
 }
 
-tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
-}
-
-tooltip label {
-  color: white;
-}
-
-#window {
+#mpris {
   background: @base;
   padding: 0 15px;
 }
 
-window#waybar.empty #window {
+window#waybar.empty #mpris.empty {
   background: none;
+}
+
+tooltip {
+  background-color: @base;
+  /* background-image: url("/home/pedro/.config/tidal-hifi/notification.jpg"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+}
+
+tooltip label {
+  color: white;
+  /* padding-left: 6em; */
 }
 
 #workspaces {
@@ -78,6 +81,7 @@ window#waybar.empty #window {
 #pulseaudio {
   color: @rose;
 }
+
 #pulseaudio.muted {
   color: black;
   background: @love;
