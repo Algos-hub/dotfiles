@@ -25,6 +25,8 @@
       "paused": " ",
     },
     "on-click": "playerctl --player=tidal-hifi play-pause",
+    "on-click-right": "hyprctl dispatch togglespecialworkspace music",
+    "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
     "on-scroll-up": "playerctl --player=tidal-hifi previous",
     "on-scroll-down": "playerctl --player=tidal-hifi next",
     "tooltip": false,

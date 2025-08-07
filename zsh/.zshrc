@@ -19,6 +19,9 @@ alias fzf='fzf -m --preview="bat --color=always {}"'
 alias clear="clear && printf '\n%.0s' {1..$LINES}"
 alias ls="ls -lAhtrG --color=always"
 alias grep="grep --color=always"
+alias vim="nvim"
+alias adbrr="adb shell settings put secure oplus_customize_screen_refresh_rate 0 && adb shell settings put system peak_refresh_rate 1 && adb shell settings put system min_refresh_ rate 1 && adb shell settings put system user_refresh_ rate 1"
+alias symfony="/usr/bin/symfony"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
