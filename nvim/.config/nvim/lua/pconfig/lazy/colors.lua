@@ -8,7 +8,10 @@ return {
 			variant = "moon",
 			dark_variant = "moon",
 			styles = {
-				transparency = true,
+				transparency = false,
+			},
+			highlight_groups = {
+				Visual = { fg = "base", bg = "text", inherit = false },
 			},
 		})
 		vim.cmd.colorscheme("rose-pine")

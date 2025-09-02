@@ -22,6 +22,7 @@ alias grep="grep --color=always"
 alias vim="nvim"
 alias adbrr="adb shell settings put secure oplus_customize_screen_refresh_rate 0 && adb shell settings put system peak_refresh_rate 1 && adb shell settings put system min_refresh_ rate 1 && adb shell settings put system user_refresh_ rate 1"
 alias symfony="/usr/bin/symfony"
+alias update="yay -Syu"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
@@ -31,3 +32,4 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 export PATH="$HOME/.symfony5/bin:$PATH"
 export PATH="$HOME/.local/share/applications:$PATH"
 export PATH="$HOME/Desktop:$PATH"
+export PATH="/opt/android-studio/bin:$PATH"

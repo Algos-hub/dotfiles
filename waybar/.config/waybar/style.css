@@ -24,14 +24,10 @@ window#waybar.empty #mpris.empty {
 
 tooltip {
   background-color: @base;
-  /* background-image: url("/home/pedro/.config/tidal-hifi/notification.jpg"); */
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
 }
 
 tooltip label {
   color: white;
-  /* padding-left: 6em; */
 }
 
 #workspaces {
@@ -52,16 +48,23 @@ tooltip label {
 #pulseaudio,
 #network,
 #cpu,
+#temperature,
+#tray,
 #clock {
   padding: 0 20px 0 15px;
   background: @base;
+}
+
+#tray {
+  padding: 0 5px 0 5px;
 }
 
 #clock {
   padding: 0 10px;
 }
 
-#cpu {
+#cpu,
+#temperature {
   color: @foam;
 }
 

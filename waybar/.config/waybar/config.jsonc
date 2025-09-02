@@ -1,80 +1,91 @@
 // -*- mode: jsonc -*-
 {
-  "reload_on_style_change": true,
-  "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 35, // Waybar height (to be removed for auto height)
-  "margin": "0 10 10 10",
-  "spacing": 10, // Gaps between modules (4px)
-  // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["mpris"],
-  "modules-right": [
-    "pulseaudio",
-    "memory",
-    "cpu",
-    "network",
-    "keyboard-state",
-    "clock",
-  ],
-  "mpris": {
-    "format": "{status_icon} {dynamic}",
-    "dynamic-order": ["title", "artist", "position", "length"],
-    "dynamic-len": 50,
-    "status-icons": {
-      "playing": " ",
-      "paused": " ",
+    "reload_on_style_change": true,
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 35, // Waybar height (to be removed for auto height)
+    "margin": "0 10 10 10",
+    "spacing": 5, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "memory",
+        "cpu",
+        "temperature",
+        "network",
+        "clock",
+    ],
+    "mpris": {
+        "format": "{status_icon} {dynamic}",
+        "interval": 1,
+        "dynamic-order": [
+            "title",
+            "artist",
+            "position",
+            "length"
+        ],
+        "dynamic-len": 50,
+        "status-icons": {
+            "paused": " ",
+            "playing": " ",
+        },
+        "on-click": "playerctl play-pause",
+        "on-click-right": "hyprctl dispatch togglespecialworkspace music",
+        "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
+        "on-scroll-up": "playerctl previous",
+        "on-scroll-down": "playerctl next",
+        "tooltip": true,
+        "tooltip-format": "{dynamic}",
     },
-    "on-click": "playerctl --player=tidal-hifi play-pause",
-    "on-click-right": "hyprctl dispatch togglespecialworkspace music",
-    "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
-    "on-scroll-up": "playerctl --player=tidal-hifi previous",
-    "on-scroll-down": "playerctl --player=tidal-hifi next",
-    "tooltip": false,
-  },
-  "keyboard-state": {
-    "numlock": false,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": "",
+    "temperature": {
+        "format": "{temperatureC}°C ",
+        "tooltip": false,
     },
-    "device-path": "/dev/input/event19",
-  },
-  "clock": {
-    "interval": 1,
-    "tooltip": false,
-  },
-  "cpu": {
-    "format": "{usage}% ",
-    "tooltip": false,
-  },
-  "memory": {
-    "format": "{}% ",
-  },
-  "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ifname}: <span color='white'>{gwaddr}</span>",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "Disconnected ⚠",
-  },
-  "pulseaudio": {
-    "format": "{volume}% <span size='125%'>{icon}</span>",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": "{volume}% <span size='125%'>{icon}</span>",
-    "format-source": "{volume}% ",
-    "format-source-muted": "",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "headset": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": ["󰕿", "󰖀", "󰕾"],
-      "default-muted": "󰖁",
+    "clock": {
+        "interval": 1,
+        "tooltip": false,
     },
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
-  },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": true,
+    },
+    "memory": {
+        "format": "{}% ",
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        // "format-ethernet": "{ifname}: <span color='white'>{gwaddr}</span>",
+        "format-ethernet": "Leaked IP: <span color='white'>{gwaddr}</span>",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "tooltip": false,
+    },
+    "pulseaudio": {
+        "format": "{volume}% <span size='125%'>{icon}</span>",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "{volume}% <span size='125%'>{icon}</span>",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ],
+            "default-muted": "󰖁",
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
+    },
 }
