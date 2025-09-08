@@ -1,91 +1,80 @@
 // -*- mode: jsonc -*-
 {
-    "reload_on_style_change": true,
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
-    "margin": "0 10 10 10",
-    "spacing": 5, // Gaps between modules (4px)
-    // Choose the order of the modules
-    "modules-left": [
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "mpris"
-    ],
-    "modules-right": [
-        "pulseaudio",
-        "memory",
-        "cpu",
-        "temperature",
-        "network",
-        "clock",
-    ],
-    "mpris": {
-        "format": "{status_icon} {dynamic}",
-        "interval": 1,
-        "dynamic-order": [
-            "title",
-            "artist",
-            "position",
-            "length"
-        ],
-        "dynamic-len": 50,
-        "status-icons": {
-            "paused": " ",
-            "playing": " ",
-        },
-        "on-click": "playerctl play-pause",
-        "on-click-right": "hyprctl dispatch togglespecialworkspace music",
-        "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
-        "on-scroll-up": "playerctl previous",
-        "on-scroll-down": "playerctl next",
-        "tooltip": true,
-        "tooltip-format": "{dynamic}",
+  "reload_on_style_change": true,
+  "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 35, // Waybar height (to be removed for auto height)
+  "margin": "0 10 10 10",
+  "spacing": 5, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["mpris"],
+  "modules-right": [
+    "memory",
+    "cpu",
+    "temperature",
+    "network",
+    "pulseaudio",
+    "clock",
+  ],
+  "mpris": {
+    "format": "{status_icon} {dynamic}",
+    "interval": 1,
+    "dynamic-order": ["title", "artist", "position", "length"],
+    "dynamic-len": 50,
+    "status-icons": {
+      "paused": " ",
+      "playing": " ",
     },
-    "temperature": {
-        "format": "{temperatureC}°C ",
-        "tooltip": false,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "hyprctl dispatch togglespecialworkspace music",
+    "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "tooltip": true,
+    "tooltip-format": "{dynamic}",
+  },
+  "temperature": {
+    "format": "{temperatureC}°C ",
+    "tooltip": false,
+  },
+  "clock": {
+    "interval": 1,
+    "tooltip": false,
+  },
+  "cpu": {
+    "format": "{usage}% ",
+    "tooltip": true,
+  },
+  "memory": {
+    "format": "{}% ",
+  },
+  "network": {
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    // "format-ethernet": "{ifname}: <span color='white'>{gwaddr}</span>",
+    "format-ethernet": "Leaked IP: <span color='white'>{gwaddr}</span>",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "tooltip": false,
+  },
+  "pulseaudio": {
+    "tooltip": false,
+    "format": "{volume}% <span size='125%'>{icon}</span>",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "{volume}% <span size='125%'>{icon}</span>",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["󰕿", "󰖀", "󰕾"],
+      "default-muted": "󰖁",
     },
-    "clock": {
-        "interval": 1,
-        "tooltip": false,
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": true,
-    },
-    "memory": {
-        "format": "{}% ",
-    },
-    "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        // "format-ethernet": "{ifname}: <span color='white'>{gwaddr}</span>",
-        "format-ethernet": "Leaked IP: <span color='white'>{gwaddr}</span>",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "tooltip": false,
-    },
-    "pulseaudio": {
-        "format": "{volume}% <span size='125%'>{icon}</span>",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "{volume}% <span size='125%'>{icon}</span>",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "󰕿",
-                "󰖀",
-                "󰕾"
-            ],
-            "default-muted": "󰖁",
-        },
-        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
-    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
+    "on-click-right": "pgrep pwvucontrol > /dev/null 2>&1 && killall pwvucontrol || pwvucontrol",
+  },
 }
