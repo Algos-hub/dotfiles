@@ -1,5 +1,0 @@
-prettierd 0.25.3-1
-pretty-php 0.4.72-1
-yay 12.4.2-1
-yay-debug 12.4.2-1
-youtube-music 3.5.3-1
