@@ -15,6 +15,8 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(fzf --zsh)"
 
+setopt correct
+
 alias fzf='fzf -m --preview="bat --color=always {}"'
 alias clear="clear && printf '\n%.0s' {1..$LINES}"
 # alias ls="ls -lAhtrG --color=always"
@@ -34,3 +36,4 @@ export PATH="$HOME/.symfony5/bin:$PATH"
 export PATH="$HOME/.local/share/applications:$PATH"
 export PATH="$HOME/Desktop:$PATH"
 export PATH="/opt/android-studio/bin:$PATH"
+export PATH="$(composer config -g home)/vendor/bin:$PATH"
