@@ -12,8 +12,8 @@
     "memory",
     "cpu",
     "temperature",
-    "network",
     "pulseaudio",
+    "network",
     "clock",
   ],
   "mpris": {
