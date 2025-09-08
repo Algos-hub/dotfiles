@@ -1,5 +1,5 @@
 configuration{
-    modi: "drun,games,window,combi";
+    modi: "drun,window,combi";
     icon-theme: "Oranchelo";
     show-icons: true;
     terminal: "kitty";
