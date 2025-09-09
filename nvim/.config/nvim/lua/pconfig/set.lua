@@ -1,5 +1,5 @@
 vim.opt.relativenumber = true
-vim.opt.number = true
+vim.opt.number         = true
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     pattern = "*",
@@ -10,10 +10,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 vim.opt.guicursor = ""
 
-vim.opt.tabstop = 4
+vim.opt.tabstop     = 4
 vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.shiftwidth  = 4
+vim.opt.expandtab   = true
 
 vim.opt.hidden = true
 
@@ -21,11 +21,11 @@ vim.opt.cursorline = true
 
 vim.opt.title = true
 
-vim.opt.hlsearch = true
+vim.opt.hlsearch  = true
 vim.opt.incsearch = true
 
 vim.opt.swapfile = false
-vim.opt.backup = false
+vim.opt.backup   = false
 
 vim.opt.spell = true
 
@@ -37,11 +37,11 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.linebreak = true
+vim.opt.smartcase  = true
+vim.opt.linebreak  = true
 
-vim.o.wildmode = "longest,list:longest,full"
-vim.o.mouse = "a"
+vim.o.wildmode  = "longest,list:longest,full"
+vim.o.mouse     = "a"
 vim.o.clipboard = "unnamedplus"
 
 vim.opt.completeopt = "noinsert,menuone,noselect"
@@ -59,7 +59,7 @@ vim.api.nvim_set_hl(0, "ColorColumn", { bg = "cyan" })
 
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
-vim.g.loaded_netrw = 1
+vim.g.loaded_netrw       = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.opt.fillchars = { eob = " " }

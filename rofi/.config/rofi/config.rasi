@@ -1,17 +1,17 @@
 configuration{
-    modi: "drun,window,combi";
-    icon-theme: "Oranchelo";
-    show-icons: true;
-    terminal: "kitty";
+    sidebar-mode:        true;
+    show-icons:          true;
+    hide-scrollbar:      true;
+    disable-history:     false;
+    location:            0;
     drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-combi: " All ";
-    display-drun: " Run ";
-    display-window: " Window ";
-    display-games: " Games ";
-    sidebar-mode: true;
+    modi:                "drun,window,combi";
+    icon-theme:          "Oranchelo";
+    terminal:            "kitty";
+    display-combi:       " All ";
+    display-drun:        " Run ";
+    display-window:      " Window ";
+    display-games:       " Games ";
 }
 
 // @theme "purple"
@@ -31,23 +31,23 @@ configuration{
 
 	font: "JetBrainsMono Nerd Font 12";
 
-	foreground: @fgd;
-	background: @bg;
+	foreground:        @fgd;
+	background:        @bg;
 	active-background: @pur;
 	urgent-background: @red;
 
-	selected-background: @active-background;
+	selected-background:        @active-background;
 	selected-urgent-background: @urgent-background;
 	selected-active-background: @active-background;
-	separatorcolor: @active-background;
-	bordercolor: @pur;
+	separatorcolor:             @active-background;
+	bordercolor:                @pur;
 }
 
 #window {
 	background-color: @background;
+	border-color:     @bordercolor;
 	border:           2;
 	border-radius:    10;
-	border-color:     @bordercolor;
 	padding:          5;
 }
 #mainbox {
@@ -91,7 +91,7 @@ element-icon {
 #element.selected.normal {
 	background-color: @selected-background;
 	text-color:       black;
-    border-radius: 2px;
+    border-radius:    2px;
 }
 #element.selected.urgent {
 	background-color: @selected-urgent-background;
@@ -134,7 +134,7 @@ element-text {
 #button.selected {
 	background-color: @selected-background;
 	text-color:       black;
-    border-radius: 2px;
+    border-radius:    2px;
 }
 #inputbar {
 	spacing:    0;
