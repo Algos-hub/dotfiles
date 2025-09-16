@@ -19,7 +19,7 @@
   "mpris": {
     "format": "{status_icon} {dynamic}",
     "interval": 1,
-    "dynamic-order": ["title", "artist", "position", "length"],
+    "dynamic-order": ["title", "artist"],
     "dynamic-len": 50,
     "status-icons": {
       "paused": " ",
