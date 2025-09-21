@@ -26,7 +26,7 @@
       "playing": " ",
     },
     "on-click": "playerctl play-pause",
-    "on-click-right": "hyprctl dispatch togglespecialworkspace music",
+    "on-click-right": "playerctl metadata | grep firefox > /dev/null 2>&1 && hyprctl dispatch togglespecialworkspace ytmusic > /dev/null 2>&1 || hyprctl dispatch togglespecialworkspace music > /dev/null 2>&1",
     "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
     "on-scroll-up": "playerctl previous",
     "on-scroll-down": "playerctl next",
