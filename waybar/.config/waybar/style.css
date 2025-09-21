@@ -30,7 +30,8 @@ tooltip label {
   color: white;
 }
 
-#workspaces {
+#workspaces,
+#submap {
   background: @base;
 }
 
@@ -43,7 +44,7 @@ tooltip label {
   background: @overlay;
 }
 
-#keyboard-state label,
+#submap,
 #memory,
 #pulseaudio,
 #network,
@@ -53,6 +54,22 @@ tooltip label {
 #clock {
   padding: 0 20px 0 15px;
   background: @base;
+}
+
+#submap.focus {
+  background: @iris;
+}
+
+#submap.movefocus {
+  background: @foam;
+}
+
+#submap.resize {
+  background: @rose;
+}
+
+#submap.streaming {
+  background: @love;
 }
 
 #tray {

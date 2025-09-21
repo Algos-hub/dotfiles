@@ -6,7 +6,7 @@
   "margin": "0 10 10 10",
   "spacing": 5, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/submap", "hyprland/workspaces"],
   "modules-center": ["mpris"],
   "modules-right": [
     "memory",
@@ -32,6 +32,12 @@
     "on-scroll-down": "playerctl next",
     "tooltip": true,
     "tooltip-format": "{dynamic}",
+  },
+  "hyprland/submap": {
+    "format": "",
+    "max-length": 8,
+    "tooltip": false,
+    "always-on": true,
   },
   "temperature": {
     "format": "{temperatureC}°C ",
