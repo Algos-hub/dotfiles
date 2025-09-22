@@ -11,8 +11,8 @@ This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software
 
 # Installation
 
-**Assuming you use arch, or an arch-based distro, but the steps should be similar regardless.**
-**This configuration also assumes you already had GDM and the Gnome Desktop Environment installed (I highly recommend having a second, more "stable", Desktop Environment in case you break something and need to fix it).**
+**Assuming you use arch, or an arch-based distro, but the steps should be similar regardless.**<br/>
+**This configuration also assumes you already had GDM and the Gnome Desktop Environment installed<br/>(I highly recommend having a second, more "stable", Desktop Environment in case you break something and need to fix it).**
 
 1. `Installation`
    - Run `yay -S hyprland rofi waybar kitty pwvucontrol nerd-fonts-git fastfetch neovim zsh stow dconf dconf-editor` in your terminal.
@@ -55,7 +55,7 @@ This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software
 This tmux configuration requires TPM. If you already have TPM installed you can skip this step.<br/>
 If you skipped the `Installation` section, you can install TPM by following the install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)<br/>
 
-Once that's done, open tmux and press `Prefix` + `I` (with my dotfiles, the `Prefix` should be `CTRL + Space`, otherwise the default should be `CTRL + B`)
+Once that's done, open tmux and press `Prefix` + `I`<br/>(with my dotfiles, the `Prefix` should be `CTRL + Space`, otherwise the default should be `CTRL + B`)
 
 </details>
 
