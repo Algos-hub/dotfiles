@@ -30,8 +30,8 @@ This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software
 
 ### 1: Install tpm
 
-This tmux configuration requires the tpm. If you already have tpm installed you can skip this step.
-To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)
+This tmux configuration requires the tpm. If you already have tpm installed you can skip this step.<br/>
+To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)<br/>
 
 Once that's done, open tmux and press `Prefix` + `I` (with my dotfiles, the `Prefix` should be `CTRL + Space`, otherwise the default should be `CTRL + B`)
 
@@ -96,9 +96,9 @@ Once that's done, open tmux and press `Prefix` + `I` (with my dotfiles, the `Pre
 
 ### 1: Install make (optional)
 
-This neovim configuration uses the telescope-fzf-native.nvim extension for telescope which requires `make`.
-    `make` is used to build the binaries for telescope-fzf-native.nvim, which is used to speed up telescope but is not required.
-    If you do not wish to use telescope-fzf-native.nvim you can delete `telescope-fzf.lua` and remove the lines 4-13 and 17-24 from `telescope.lua`
+This neovim configuration uses the telescope-fzf-native.nvim extension for telescope which requires `make`.<br/>
+`make` is used to build the binaries for telescope-fzf-native.nvim, which is used to speed up telescope but is not required.<br/>
+If you do not wish to use telescope-fzf-native.nvim you can delete `telescope-fzf.lua` and remove the lines 4-13 and 17-24 from `telescope.lua`<br/>
 
 #### `telescope.lua`
 
