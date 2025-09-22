@@ -7,49 +7,6 @@ I'm also using [yay](https://github.com/Jguer/yay) as my AUR helper.
 
 This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be installed. Currently I use the JetBrains-Mono Regular.
 
-<details>
-    <summary>
-    I also have multiple CLI tools that I use that are all listed here.
-    </summary>
-
-<ul>
-    <li><a href="https://nodejs.org/en">NodeJS</a></li>
-    <li><a href="https://github.com/junegunn/fzf">fzf</a></li>
-    <li><a href="https://github.com/sharkdp/bat">bat</a></li>
-    <li><a href="https://www.lua.org/">Lua</a></li>
-    <li><a href="https://luajit.org/">LuaJIT</a></li>
-    <li><a href="https://luarocks.org/">Luarocks</a></li>
-    <li><a href="https://www.python.org/">Python</a></li>
-    <li><a href="https://github.com/pypa/pipx">pipx</a></li>
-    <li><a href="https://www.php.net/">PHP</a></li>
-    <li><a href="https://github.com/lkrms/pretty-php">pretty-php</a></li>
-    <li><a href="https://github.com/fsouza/prettierd">prettierd</a></li>
-    <li><a href="https://tree-sitter.github.io/tree-sitter/">tree-sitter</a></li>
-    <li><a href="https://github.com/pinterest/ktlint">ktlint</a></li>
-    <li><a href="https://github.com/dylanaraps/neofetch">neofetch</a></li>
-</ul>
-<!-- </details> -->
-
-<!-- # .zshrc -->
-
-<!-- All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings. -->
-
-<!-- <details> -->
-
-    <!-- <summary><h2>Installation</h2></summary> -->
-
-<!-- ### 1: Install Oh-My-Zsh and Powerlevel10k -->
-
-<!-- First start by installing [Oh-My-Zsh](https://ohmyz.sh/) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k). -->
-
-<!-- You can find the installation guides on their respective websites. -->
-
-<!-- ### 2: Copy the provided files -->
-
-<!-- Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/dotfiles/zshrc/alias.sh), [`exports.sh`](https://github.com/Algos-hub/dotfiles/zshrc/exports.sh), and [`oh-my-zsh.sh`](https://github.com/Algos-hub/dotfiles/zshrc/oh-my-zsh.sh) into your `.zshrc`. Then copy the contents of [`.p10k.zsh`](https://github.com/Algos-hub/dotfiles/zshrc/.p10k.zsh) into your `.p10k.zsh` file. -->
-
-<!-- </details> -->
-
 # Tmux configuration
 
 <details>
@@ -207,6 +164,6 @@ To install, clone this repo into your `.config` directory and rename the `neovim
 ```bash
     git clone https://github.com/Algos-hub/dotfiles ~
     mv ~/dotfiles/nvim/.config/nvim ~/.config
+
 ```
 
-</details>
