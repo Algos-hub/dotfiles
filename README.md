@@ -2,8 +2,8 @@
 
 These are my .dotfiles that I use in my own personal configuration.
 
-Currently I'm using an M1 MacBook Air running [iTerm2](https://iterm2.com/), ZSH alongside [Oh-My-Zsh](https://ohmyz.sh/), [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for a custom ZSH theme, Tmux, and Neovim.
-I'm also using [Homebrew](https://brew.sh/) as a package manager.
+Currently I'm using [Arch Linux](https://archlinux.org/) with [Hyprland](https://hypr.land/), [Kitty](https://sw.kovidgoyal.net/kitty/), ZSH alongside [Oh-My-Zsh](https://ohmyz.sh/), [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for a custom ZSH theme, Tmux, and Neovim.
+I'm also using [yay](https://github.com/Jguer/yay) as my AUR helper.
 
 This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be installed. Currently I use the JetBrains-Mono Regular.
 
@@ -11,7 +11,7 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     <summary>
     I also have multiple CLI tools that I use that are all listed here.
     </summary>
-    
+
 <ul>
     <li><a href="https://nodejs.org/en">NodeJS</a></li>
     <li><a href="https://github.com/junegunn/fzf">fzf</a></li>
@@ -28,28 +28,27 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
     <li><a href="https://github.com/pinterest/ktlint">ktlint</a></li>
     <li><a href="https://github.com/dylanaraps/neofetch">neofetch</a></li>
 </ul>
-</details>
+<!-- </details> -->
 
-And if you're also using a Mac you can run the [`installs.sh`](https://github.com/Algos-hub/dotfiles/zshrc/installs.sh) script inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory to install all the CLI tools alongside Neovim and Tmux.
+<!-- # .zshrc -->
 
-# .zshrc
+<!-- All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings. -->
 
-All of my `.zshrc` settings have been split into different files inside the [`zshrc`](https://github.com/Algos-hub/dotfiles/zshrc) directory, as well as my Oh-My-Zsh, and Powerlevel10k settings.
+<!-- <details> -->
 
-<details>
-    <summary><h2>Installation</h2></summary>
+    <!-- <summary><h2>Installation</h2></summary> -->
 
-### 1: Install Oh-My-Zsh and Powerlevel10k
+<!-- ### 1: Install Oh-My-Zsh and Powerlevel10k -->
 
-First start by installing [Oh-My-Zsh](https://ohmyz.sh/) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k).
+<!-- First start by installing [Oh-My-Zsh](https://ohmyz.sh/) and [Powerlevel10k](https://github.com/romkatv/powerlevel10k). -->
 
-You can find the installation guides on their respective websites.
+<!-- You can find the installation guides on their respective websites. -->
 
-### 2: Copy the provided files
+<!-- ### 2: Copy the provided files -->
 
-Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/dotfiles/zshrc/alias.sh), [`exports.sh`](https://github.com/Algos-hub/dotfiles/zshrc/exports.sh), and [`oh-my-zsh.sh`](https://github.com/Algos-hub/dotfiles/zshrc/oh-my-zsh.sh) into your `.zshrc`. Then copy the contents of [`.p10k.zsh`](https://github.com/Algos-hub/dotfiles/zshrc/.p10k.zsh) into your `.p10k.zsh` file.
+<!-- Finally, copy all of the contents of [`alias.sh`](https://github.com/Algos-hub/dotfiles/zshrc/alias.sh), [`exports.sh`](https://github.com/Algos-hub/dotfiles/zshrc/exports.sh), and [`oh-my-zsh.sh`](https://github.com/Algos-hub/dotfiles/zshrc/oh-my-zsh.sh) into your `.zshrc`. Then copy the contents of [`.p10k.zsh`](https://github.com/Algos-hub/dotfiles/zshrc/.p10k.zsh) into your `.p10k.zsh` file. -->
 
-</details>
+<!-- </details> -->
 
 # Tmux configuration
 
@@ -84,7 +83,7 @@ Clone this repo and move the .tmux.conf file into your home directory.
     mv ~/dotfiles/tmux/.tmux.conf ~
 ```
 
-Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of tmux it should be `C-b`)
+Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of tmux the `Prefix` should be `C-b`)
 
 </details>
 
@@ -110,15 +109,15 @@ Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of 
         <li>Custom splash screen: <a href="https://github.com/startup-nvim/startup.nvim">startup-nvim/startup.nvim</a></li>
         <li>Fuzzy finder: <a href="https://github.com/nvim-telescope/telescope.nvim">nvim-telescope/telescope.nvim</a>
             <ul>
-            dependency: 
-                <li><a href="https://github.com/nvim-lua/plenary.nvim">nvim-lua/plenary.nvim</a></li> 
+            dependency:
+                <li><a href="https://github.com/nvim-lua/plenary.nvim">nvim-lua/plenary.nvim</a></li>
             </ul>
         </li>
         <li>Syntax highlighting: <a href="https://github.com/nvim-treesitter/nvim-treesitter">nvim-treesitter/nvim-treesitter</a></li>
         <li>Formatter: <a href="https://github.com/nvimtools/none-ls.nvim">nvimtools/none-ls.nvim</a>
             <ul>
-            dependency: 
-                <li><a href="https://github.com/nvimtools/none-ls-extras.nvim">nvimtools/none-ls-extras.nvim</a></li> 
+            dependency:
+                <li><a href="https://github.com/nvimtools/none-ls-extras.nvim">nvimtools/none-ls-extras.nvim</a></li>
             </ul>
         </li>
         <li>Language Server Protocol (LSP): <a href="https://github.com/neovim/nvim-lspconfig">neovim/nvim-lspconfig</a>
