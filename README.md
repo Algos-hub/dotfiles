@@ -9,6 +9,27 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
 
 This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software/stow/), so setting everything up should be as simple as writing<br/> `stow $directory_name` from the root of this repo.
 
+# Installation
+
+**Assuming you use arch, or an arch-based distro, but the steps should be similar regardless.**
+**This configuration also assumes you already had GDM and the Gnome Desktop Environment installed (I highly recommend having a second, more "stable", Desktop Environment in case you break something and need to fix it).**
+
+1. `Installation`
+   - Run `yay -S hyprland rofi waybar kitty pwvucontrol nerd-fonts-git fastfetch neovim zsh stow dconf dconf-editor` in your terminal.
+   - Run `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` to install Oh-My-Zsh.
+   - Run `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"` to install Powerlevel10k.
+   - Run `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm` to set up Tmux TMP.
+   - Run `git clone https://github.com/Algos-hub/dotfiles` to clone this repo.
+2. `Configuration & Setup`
+   - From the root directory of this repo, run <br/>`stow hypr waybar nvim bash zsh fastfetch gtk-3.0 gtk-4.0 icons p10k rofi themes wallpapers Xresources kitty`<br/>(if you already have some configuration files for those programs, make sure to back them up so you can reimplement them later)
+   - Use a text editor to edit the Hyprland config file in `~/.config/hypr/hyprland.conf`. You need to edit the config
+     to setup your wallpaper and monitor settings.
+   - Enter `dconf-editor` in your terminal to open up the dconf gui program, search "gtk-theme", and set the theme value to `rose-pine-moon`. You may also use dconf to set your icon theme and cursor theme to ones of your liking.
+3. `Creative Liberty`
+   - I recommend reading and editing all config files them as you see fit; you may want to add or change things, such as the keybinds for Hyprland, or
+     the fonts used.
+   - Feel free to continue reading this document for more details on the design & softwares used.
+
 # Tmux configuration
 
 <details>
@@ -22,15 +43,16 @@ This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software
     <li>Copy and paste: <a href="https://github.com/tmux-plugins/tmux-yank">tmux-plugins/tmux-yank</a></li>
     <li>Status line: <a href="https://github.com/o0th/tmux-nova">o0th/tmux-nova</a></li>
     <li>Vim navigation integration: <a href="https://github.com/christoomey/vim-tmux-navigator">christoomey/vim-tmux-navigator</a></li>
+    <li>Tmux session manager: <a href="https://github.com/tmux-plugins/tmux-resurrect">tmux-plugins/tmux-resurrect</a></li>
     <ul>
 </details>
 
 <details>
     <summary><h2>Installation</h2></summary>
 
-### 1: Install tpm
+### 1: Finish setting up TPM
 
-This tmux configuration requires the tpm. If you already have tpm installed you can skip this step.<br/>
+This tmux configuration requires TPM. If you already have TPM installed you can skip this step.<br/>
 To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)<br/>
 
 Once that's done, open tmux and press `Prefix` + `I` (with my dotfiles, the `Prefix` should be `CTRL + Space`, otherwise the default should be `CTRL + B`)
