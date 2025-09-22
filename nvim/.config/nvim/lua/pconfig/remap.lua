@@ -14,4 +14,4 @@ vim.keymap.set("n", "C-h", ":wincmd h<CR>")
 vim.keymap.set("n", "C-l", ":wincmd l<CR>")
 
 -- Clear highlights
-vim.keymap.set({ "n", "v", "o" }, "<C-q>", ":nohlsearch<cr>")
+vim.keymap.set({ "n", "v", "o" }, "<C-w>", ":nohlsearch<cr>")
