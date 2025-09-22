@@ -48,12 +48,12 @@ This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software
 </details>
 
 <details>
-    <summary><h2>Installation</h2></summary>
+    <summary><h2>Set up</h2></summary>
 
 ### 1: Finish setting up TPM
 
 This tmux configuration requires TPM. If you already have TPM installed you can skip this step.<br/>
-To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)<br/>
+If you skipped the `Installation` section, you can install TPM by following the install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)<br/>
 
 Once that's done, open tmux and press `Prefix` + `I` (with my dotfiles, the `Prefix` should be `CTRL + Space`, otherwise the default should be `CTRL + B`)
 
