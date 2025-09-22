@@ -26,6 +26,8 @@
       "playing": " ",
     },
     "on-click": "playerctl play-pause",
+    //TODO: Figure out a way to get the audio player's currently running app to then redirect the on-right-click
+    //action to the proper application
     "on-click-right": "playerctl metadata | grep firefox > /dev/null 2>&1 && hyprctl dispatch togglespecialworkspace ytmusic > /dev/null 2>&1 || hyprctl dispatch togglespecialworkspace music > /dev/null 2>&1",
     "on-click-middle": "hyprctl dispatch togglespecialworkspace audio",
     "on-scroll-up": "playerctl previous",
