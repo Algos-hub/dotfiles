@@ -7,6 +7,8 @@ I'm also using [yay](https://github.com/Jguer/yay) as my AUR helper.
 
 This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be installed. Currently I use the JetBrains-Mono Regular.
 
+This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software/stow/), so setting everything up should be as simple as writing `stow $directory_name` from the root of this repo.
+
 # Tmux configuration
 
 <details>
@@ -29,18 +31,9 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
 ### 1: Install tpm
 
 This tmux configuration requires the tpm. If you already have tpm installed you can skip this step.
-    To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)
+To install tmp you can follow their install guides in their official Github repo [here](https://github.com/tmux-plugins/tpm?tab=readme-ov-file#installation)
 
-### 2: Cloning this repo
-
-Clone this repo and move the .tmux.conf file into your home directory.
-
-```bash
-    git clone https://github.com/Algos-hub/dotfiles ~
-    mv ~/dotfiles/tmux/.tmux.conf ~
-```
-
-Once that's done, open tmux and press `Prefix` + `I` (on a fresh intallation of tmux the `Prefix` should be `C-b`)
+Once that's done, open tmux and press `Prefix` + `I` (with my dotfiles, the `Prefix` should be `CTRL + Space`, otherwise the default should be `CTRL + B`)
 
 </details>
 
@@ -155,15 +148,3 @@ return {
     end
 }
 ```
-
-### 2: Cloning this repo
-
-To install, clone this repo into your `.config` directory and rename the `neovim-config` directory to `nvim`.
-    If you already have an `nvim` directory, you may need to delete/move it somewhere else first.
-
-```bash
-    git clone https://github.com/Algos-hub/dotfiles ~
-    mv ~/dotfiles/nvim/.config/nvim ~/.config
-
-```
-
