@@ -2,12 +2,12 @@
 
 These are my .dotfiles that I use in my own personal configuration.
 
-Currently I'm using [Arch Linux](https://archlinux.org/) with [Hyprland](https://hypr.land/), [Kitty](https://sw.kovidgoyal.net/kitty/), ZSH alongside [Oh-My-Zsh](https://ohmyz.sh/), [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for a custom ZSH theme, Tmux, and Neovim.
+Currently I'm using [Arch Linux](https://archlinux.org/) with [Hyprland](https://hypr.land/), [Kitty](https://sw.kovidgoyal.net/kitty/), ZSH alongside [Oh-My-Zsh](https://ohmyz.sh/), [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for a custom ZSH theme, Tmux, and Neovim.<br/>
 I'm also using [yay](https://github.com/Jguer/yay) as my AUR helper.
 
 This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be installed. Currently I use the JetBrains-Mono Regular.
 
-This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software/stow/), so setting everything up should be as simple as writing `stow $directory_name` from the root of this repo.
+This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software/stow/), so setting everything up should be as simple as writing<br/> `stow $directory_name` from the root of this repo.
 
 # Tmux configuration
 
