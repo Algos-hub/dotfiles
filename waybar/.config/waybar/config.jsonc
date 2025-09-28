@@ -40,6 +40,7 @@
     "max-length": 1,
     "tooltip": false,
     "always-on": true,
+    "default-submap": "Normal",
   },
   "temperature": {
     "format": "{temperatureC}°C ",
