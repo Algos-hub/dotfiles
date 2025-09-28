@@ -36,8 +36,8 @@
     "tooltip-format": "{dynamic}",
   },
   "hyprland/submap": {
-    "format": "",
-    "max-length": 8,
+    "format": "{:.1}",
+    "max-length": 1,
     "tooltip": false,
     "always-on": true,
   },

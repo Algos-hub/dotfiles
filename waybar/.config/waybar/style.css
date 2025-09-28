@@ -56,20 +56,28 @@ tooltip label {
   background: @base;
 }
 
-#submap.focus {
+#submap {
+  padding: 0 15px 0 15px;
+}
+
+#submap.Focus {
   background: @iris;
+  color: black;
 }
 
-#submap.movefocus {
+#submap.MoveFocus {
   background: @foam;
+  color: black;
 }
 
-#submap.resize {
+#submap.Resize {
   background: @rose;
+  color: black;
 }
 
-#submap.streaming {
+#submap.Streaming {
   background: @love;
+  color: black;
 }
 
 #tray {
