@@ -8,7 +8,7 @@ return {
 			variant = "moon",
 			dark_variant = "moon",
 			styles = {
-				transparency = false,
+				transparency = true,
 			},
 			highlight_groups = {
 				Visual = { fg = "base", bg = "text", inherit = false },
