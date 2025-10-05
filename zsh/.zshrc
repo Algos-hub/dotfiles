@@ -71,6 +71,7 @@ function switch_owner_and_size(formatted_listing)
 
 LS_FLAGS="-lAhtrpG --color=always --time-style='+%_d %b %H:%M'"
 
+alias lsnf="'ls' $LS_FLAGS"
 alias ls="ls $LS_FLAGS | $LS_FORMATTER"
 alias fzf='fzf -m --preview="bat --color=always {}"'
 alias clear="clear && printf '\n%.0s' {1..$LINES}"
