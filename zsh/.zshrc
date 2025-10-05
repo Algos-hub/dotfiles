@@ -17,51 +17,61 @@ eval "$(fzf --zsh)"
 
 setopt correct
 
-# There has to be a better way to do this without installing a third party ls replacement...
-SED_FORMAT="sed -E '2,\$s/ +[0-9]+//'"
-
-AWK_FORMAT="awk '
+LS_FORMATTER="awk '
+function switch_owner_and_size(formatted_listing)
 {
-    _=\$0;
+    split(formatted_listing, a, FS, seps);
+    temp=a[3];
+    a[3]=a[4];
+    a[4]=temp;
+    leftover=\"\";
+    for (i=1;i<=NF;i++)
+        switch (i)
+        {
+            case 1:
+                printf(\"%s \", a[i]);
+                break;
+            case 2:
+                printf(\"\");
+                break;
+            case 3:
+                if(length(seps[i])>4)
+                {
+                    leftover=substr(seps[i], 1, length(seps[i])-4);
+                    printf(\"%s%s \", substr(seps[i], 1, 4), a[i]);
+                }
+                else
+                {
+                    printf(\"%s%s \", seps[i], a[i]);
+                }
+                break;
+            case 4:
+                printf(\"%s%s%s\", a[i], seps[i], leftover);
+                break;
+            default:
+                printf(\"%s%s\", a[i], seps[i]);
+                break;
+        }
+    print \"\"
+}
+{
+    listing=\$0;
     gsub(/\033\[[0-9;]*m/,\"\",\$0);
     if(\$1~ /^[dl]/ && \$5~ /^[0-9]/)
     {
         s=length(\$4);
-        sub(\$4,sprintf(\"%*s\",s-1,\"\")\"-\",_);
-        print _
+        sub(\$4,sprintf(\"%*s\",s-1,\"\")\"-\",listing);
+        switch_owner_and_size(listing)
     }
     else
     {
-        print _
+        switch_owner_and_size(listing)
     }
 }'"
 
-AWK_FORMAT_FIX="awk '
-{
-    split(\$0, a, FS, seps);
-    temp=a[2];
-    a[2]=a[3];
-    a[3]=temp;
-    for (i=1;i<=NF;i++)
-        if(i==2)
-        {
-            if(length(seps[i])>4)
-            {
-                printf(\"%s%s%s \", substr(seps[i], 1, 4), a[i], substr(seps[i], 1, seps[i]-4));
-            }
-            else
-            {
-                printf(\"%s%s \", seps[i], a[i]);
-            }
-        }
-        else
-        {
-        printf(\"%s%s\", a[i], seps[i]);
-        }
-    print \"\"
-}'"
+LS_FLAGS="-lAhtrpG --color=always --time-style='+%_d %b %H:%M'"
 
-alias ls="ls -lAhtrpG --color=always --time-style='+%_d %b %H:%M' | $AWK_FORMAT | $SED_FORMAT | $AWK_FORMAT_FIX"
+alias ls="ls $LS_FLAGS | $LS_FORMATTER"
 alias fzf='fzf -m --preview="bat --color=always {}"'
 alias clear="clear && printf '\n%.0s' {1..$LINES}"
 alias grep="grep --color=always"
