@@ -1,161 +1,161 @@
 return {
-	{
-		"williamboman/mason.nvim",
-		lazy = false,
-		config = function()
-			require("mason").setup()
-		end,
-	},
-	{
-		"williamboman/mason-lspconfig.nvim",
-		lazy = false,
-		opts = {
-			auto_install = true,
-		},
-	},
-	{ "artemave/workspace-diagnostics.nvim" },
-	{
-		"neovim/nvim-lspconfig",
+    {
+        "williamboman/mason.nvim",
+        lazy = false,
+        config = function()
+            require("mason").setup()
+        end,
+    },
+    {
+        "williamboman/mason-lspconfig.nvim",
+        lazy = false,
+        opts = {
+            auto_install = true,
+        },
+    },
+    { "artemave/workspace-diagnostics.nvim" },
+    {
+        "neovim/nvim-lspconfig",
 
-		config = function()
-			vim.diagnostic.config({
-				signs = false,
-				underline = true,
-			})
-			-- Overriding the default color scheme given by solarized.nvim
-			local set_hl_for_floating_window = function()
-				vim.api.nvim_set_hl(0, "NormalFloat", {
-					link = "Normal",
-				})
-				vim.api.nvim_set_hl(0, "FloatBorder", {
-					bg = "none",
-				})
-			end
+        config = function()
+            vim.diagnostic.config({
+                signs = false,
+                underline = true,
+            })
 
-			set_hl_for_floating_window()
+            local set_hl_for_floating_window = function()
+                vim.api.nvim_set_hl(0, "NormalFloat", {
+                    link = "Normal",
+                })
+                vim.api.nvim_set_hl(0, "FloatBorder", {
+                    bg = "none",
+                })
+            end
 
-			vim.api.nvim_create_autocmd("ColorScheme", {
-				pattern = "*",
-				desc = "Avoid overwritten by loading color schemes later",
-				callback = set_hl_for_floating_window,
-			})
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+            set_hl_for_floating_window()
 
-			-- Add rounded border on hover and on signature help popup window
-			local handlers = {
-				["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
-				["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
-			}
+            vim.api.nvim_create_autocmd("ColorScheme", {
+                pattern = "*",
+                desc = "Avoid overwritten by loading color schemes later",
+                callback = set_hl_for_floating_window,
+            })
+            local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			-- Add rounded border to the diagnostic popup window
-			vim.diagnostic.config({
-				virtual_text = {
-					prefix = "■", -- Could be '●', '▎', 'x', '■', , 
-				},
-			})
+            -- Add rounded border on hover and on signature help popup window
+            local handlers = {
+                ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
+                ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
+            }
 
-			-- Set up lspconfig.
-			require("mason").setup()
+            -- Add rounded border to the diagnostic popup window
+            vim.diagnostic.config({
+                virtual_text = {
+                    prefix = "■", -- Could be '●', '▎', 'x', '■', , 
+                },
+            })
 
-			require("mason-lspconfig").setup({
-				ensure_installed = {
-					"ts_ls",
-					"yamlls",
-					"sqlls",
-					"phpactor",
-					"pylsp",
-					"kotlin_language_server",
-					"jsonls",
-					"html",
-					"eslint",
-					"cssls",
-					"clangd",
-					"angularls",
-					"vimls",
-					"lua_ls",
-				},
+            -- Set up lspconfig.
+            require("mason").setup()
 
-				handlers = {
-					function(server_name)
-						require("lspconfig")[server_name].setup({
-							capabilities = capabilities,
-							handlers = handlers,
-							on_attach = function(client, bufnr)
-								require("workspace-diagnostics").populate_workspace_diagnostics(client, bufnr)
-							end,
-						})
-					end,
-					["clangd"] = function()
-						local cmp_nvim_lsp = require("cmp_nvim_lsp")
-						require("lspconfig").clangd.setup({
-							on_attach = function(client, bufnr)
-								require("workspace-diagnostics").populate_workspace_diagnostics(client, bufnr)
-							end,
-							capabilities = cmp_nvim_lsp.default_capabilities(),
-							cmd = {
-								"clangd",
-								"--offset-encoding=utf-16",
-							},
-						})
-					end,
-					["lua_ls"] = function()
-						local lspconfig = require("lspconfig")
-						lspconfig.lua_ls.setup({
-							on_attach = function(client, bufnr)
-								require("workspace-diagnostics").populate_workspace_diagnostics(client, bufnr)
-							end,
-							capabilities = capabilities,
-							handlers = handlers,
-							settings = {
-								Lua = {
-									runtime = { version = "Lua 5.1" },
-									diagnostics = {
-										globals = { "vim", "it", "describe", "before_each", "after_each" },
-									},
-								},
-							},
-						})
-					end,
-				},
-			})
+            require("mason-lspconfig").setup({
+                ensure_installed = {
+                    "ts_ls",
+                    "yamlls",
+                    "sqlls",
+                    "phpactor",
+                    "pylsp",
+                    "kotlin_language_server",
+                    "jsonls",
+                    "html",
+                    "eslint",
+                    "cssls",
+                    "clangd",
+                    "angularls",
+                    "vimls",
+                    "lua_ls",
+                },
 
-			vim.api.nvim_create_autocmd("LspAttach", {
+                handlers = {
+                    function(server_name)
+                        require("lspconfig")[server_name].setup({
+                            capabilities = capabilities,
+                            handlers = handlers,
+                            on_attach = function(client, bufnr)
+                                require("workspace-diagnostics").populate_workspace_diagnostics(client, bufnr)
+                            end,
+                        })
+                    end,
+                    ["clangd"] = function()
+                        local cmp_nvim_lsp = require("cmp_nvim_lsp")
+                        require("lspconfig").clangd.setup({
+                            on_attach = function(client, bufnr)
+                                require("workspace-diagnostics").populate_workspace_diagnostics(client, bufnr)
+                            end,
+                            capabilities = cmp_nvim_lsp.default_capabilities(),
+                            cmd = {
+                                "clangd",
+                                "--offset-encoding=utf-16",
+                            },
+                        })
+                    end,
+                    ["lua_ls"] = function()
+                        local lspconfig = require("lspconfig")
+                        lspconfig.lua_ls.setup({
+                            on_attach = function(client, bufnr)
+                                require("workspace-diagnostics").populate_workspace_diagnostics(client, bufnr)
+                            end,
+                            capabilities = capabilities,
+                            handlers = handlers,
+                            settings = {
+                                Lua = {
+                                    runtime = { version = "Lua 5.1" },
+                                    diagnostics = {
+                                        globals = { "vim", "it", "describe", "before_each", "after_each" },
+                                    },
+                                },
+                            },
+                        })
+                    end,
+                },
+            })
 
-				group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+            vim.api.nvim_create_autocmd("LspAttach", {
 
-				callback = function(ev)
-					local client = vim.lsp.get_client_by_id(ev.data.client_id)
+                group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 
-					client.server_capabilities.semanticTokensProvider = nil
+                callback = function(ev)
+                    local client = vim.lsp.get_client_by_id(ev.data.client_id)
 
-					vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
+                    client.server_capabilities.semanticTokensProvider = nil
 
-					-- Buffer local mappings.
-					-- See `:help vim.lsp.*` for documentation on any of the below functions
-					local opts = { buffer = ev.buf }
-					vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-					vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-					vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-					vim.keymap.set("n", "<C-m>", vim.lsp.buf.signature_help, opts)
-					vim.keymap.set("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, opts)
-					vim.keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, opts)
-					vim.keymap.set("n", "<leader>wl", function()
-						print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-					end, opts)
-					vim.keymap.set("n", "<leader>D", vim.lsp.buf.type_definition, opts)
-					vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
-					vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
-					vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-					vim.keymap.set("n", "<leader>F", function()
-						vim.lsp.buf.format({ async = true })
-					end, opts)
-				end,
-			})
-			vim.lsp.handlers["textDocument/publishDiagnostics"] =
-				vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-					update_in_insert = true,
-				})
-		end,
-	},
+                    vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
+
+                    -- Buffer local mappings.
+                    -- See `:help vim.lsp.*` for documentation on any of the below functions
+                    local opts = { buffer = ev.buf }
+                    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+                    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+                    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+                    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+                    vim.keymap.set("n", "<C-m>", vim.lsp.buf.signature_help, opts)
+                    vim.keymap.set("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, opts)
+                    vim.keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, opts)
+                    vim.keymap.set("n", "<leader>wl", function()
+                        print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+                    end, opts)
+                    vim.keymap.set("n", "<leader>D", vim.lsp.buf.type_definition, opts)
+                    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+                    vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+                    vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+                    vim.keymap.set("n", "<leader>F", function()
+                        vim.lsp.buf.format({ async = true })
+                    end, opts)
+                end,
+            })
+            vim.lsp.handlers["textDocument/publishDiagnostics"] =
+                vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+                    update_in_insert = true,
+                })
+        end,
+    },
 }
