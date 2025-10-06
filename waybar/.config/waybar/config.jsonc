@@ -81,7 +81,7 @@
       "default": ["󰕿", "󰖀", "󰕾"],
       "default-muted": "󰖁",
     },
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
-    "on-click-right": "pgrep pwvucontrol > /dev/null 2>&1 && killall pwvucontrol || pwvucontrol",
+    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
+    "on-click": "pgrep pwvucontrol > /dev/null 2>&1 && killall pwvucontrol || pwvucontrol",
   },
 }
