@@ -1,5 +1,7 @@
 # Personal dotfiles
 
+## These instructions are probably incomplete and/or out of date.
+
 These are my .dotfiles that I use in my own personal configuration.
 
 Currently I'm using [Arch Linux](https://archlinux.org/) with [Hyprland](https://hypr.land/), [Kitty](https://sw.kovidgoyal.net/kitty/), ZSH alongside [Oh-My-Zsh](https://ohmyz.sh/), [Powerlevel10k](https://github.com/romkatv/powerlevel10k) for a custom ZSH theme, Tmux, and Neovim.<br/>
@@ -9,19 +11,21 @@ This configuration also requires a [Nerd Font](https://www.nerdfonts.com/) to be
 
 This repo was designed to be used with GNU [`stow`](https://www.gnu.org/software/stow/), so setting everything up should be as simple as writing<br/> `stow $directory_name` from the root of this repo.
 
+All the icons are from [https://github.com/rose-pine/gtk](https://github.com/rose-pine/gtk).
+
 # Installation
 
 **Assuming you use arch, or an arch-based distro, but the steps should be similar regardless.**<br/>
 **This configuration also assumes you already had GDM and the Gnome Desktop Environment installed<br/>(I highly recommend having a second, more "stable", Desktop Environment in case you break something and need to fix it).**
 
 1. `Installation`
-   - Run `yay -S hyprland rofi waybar kitty pwvucontrol nerd-fonts-git fastfetch neovim zsh stow dconf dconf-editor` in your terminal.
+   - Run `yay -S hyprland rofi waybar kitty pwvucontrol nerd-fonts-git fastfetch neovim zsh stow dconf dconf-editor fzf` in your terminal.
    - Run `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` to install Oh-My-Zsh.
    - Run `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"` to install Powerlevel10k.
    - Run `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm` to set up Tmux TMP.
    - Run `git clone https://github.com/Algos-hub/dotfiles` to clone this repo.
 2. `Configuration & Setup`
-   - From the root directory of this repo, run <br/>`stow hypr waybar nvim bash zsh fastfetch gtk-3.0 gtk-4.0 icons p10k rofi themes wallpapers Xresources kitty`<br/>(if you already have some configuration files for those programs, make sure to back them up so you can reimplement them later)
+   - From the root directory of this repo, run <br/>`stow hypr waybar nvim bash zsh fastfetch gtk-3.0 gtk-4.0 icons p10k rofi wallpapers Xresources kitty`<br/>(if you already have some configuration files for those programs, make sure to back them up so you can reimplement them later)
    - Use a text editor to edit the Hyprland config file in `~/.config/hypr/hyprland.conf`. You need to edit the config
      to setup your wallpaper and monitor settings.
    - Enter `dconf-editor` in your terminal to open up the dconf gui program, search "gtk-theme", and set the theme value to `rose-pine-moon`. You may also use dconf to set your icon theme and cursor theme to ones of your liking.
@@ -121,6 +125,7 @@ Once that's done, open tmux and press `Prefix` + `I`<br/>(with my dotfiles, the 
 This neovim configuration uses the telescope-fzf-native.nvim extension for telescope which requires `make`.<br/>
 `make` is used to build the binaries for telescope-fzf-native.nvim, which is used to speed up telescope but is not required.<br/>
 If you do not wish to use telescope-fzf-native.nvim you can delete `telescope-fzf.lua` and remove the lines 4-13 and 17-24 from `telescope.lua`<br/>
+If you do wish to use it, make sure to build the binaries in the `~/.local/share/nvim/lazy/telescope-fzf-native.nvim/` directory, or wherever telescope-fzf-native is installed, and just run the `make` command to build it.
 
 #### `telescope.lua`
 
