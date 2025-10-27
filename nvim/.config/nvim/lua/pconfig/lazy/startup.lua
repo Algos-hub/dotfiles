@@ -6,7 +6,7 @@ return {
 	},
 	config = function()
 		require("startup").setup({
-			theme = "evil",
+			theme = "dashboard",
 		})
 		vim.cmd("setlocal nospell")
 	end,
