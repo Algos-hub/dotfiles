@@ -9,10 +9,16 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.prettierd,
 				null_ls.builtins.formatting.pretty_php,
-				null_ls.builtins.formatting.clang_format,
+				null_ls.builtins.formatting.clang_format.with({
+					extra_args = function(params)
+						return {
+							"--fallback-style=webkit",
+						}
+					end,
+				}),
 				null_ls.builtins.formatting.ktlint,
 				null_ls.builtins.formatting.black,
-                null_ls.builtins.diagnostics.twigcs,
+				null_ls.builtins.diagnostics.twigcs,
 				null_ls.builtins.formatting.sqlfluff.with({
 					extra_args = { "--dialect", "postgres" },
 				}),
