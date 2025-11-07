@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-internetSearch=$(rofi -dmenu -p "Search" -no-fixed-num-lines)
+internetSearch=$(pgrep rofi > /dev/null 2>&1 && killall rofi || rofi -dmenu -p "Search" -no-fixed-num-lines)
 regex='^[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$'
 
 if [[ -z "${internetSearch}" ]]; then
