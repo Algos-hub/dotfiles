@@ -69,7 +69,7 @@ function switch_owner_and_size(formatted_listing)
     }
 }'"
 
-LS_FLAGS="-lAhtrpG --color=always --time-style='+%_d %b %H:%M'"
+LS_FLAGS="-lAhtrpG --color=always --time-style='+%_d %b %H:%M' --group-directories-first"
 
 alias lsnf="'ls' $LS_FLAGS"
 alias ls="ls $LS_FLAGS | $LS_FORMATTER"
