@@ -13,11 +13,11 @@ if [[ "$current_player" ]] then
             ;;
 
         'rhythmbox')
-            pgrep rhythmbox > /dev/null 2>&1 &&  hyprctl dispatch focuswindow initialclass:org.gnome.Rhythmbox3 | grep ok || nautilus
+            pgrep rhythmbox > /dev/null 2>&1 &&  hyprctl dispatch focuswindow initialclass:org.gnome.Rhythmbox3 | grep ok || rhythmbox
             ;;
 
         *)
-            return 0
+            pgrep rofi > /dev/null 2>&1 && killall rofi || rofi -modi drun -show drun -p "Music" -theme-str 'inputbar {enabled: false;} listview {border: 0; padding: 0;}' -filter 'Music ' -no-fixed-num-lines
             ;;
     esac
 else
