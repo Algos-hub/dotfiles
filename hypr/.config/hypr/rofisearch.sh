@@ -10,6 +10,6 @@ else
     if [[ "$internetSearch" =~ $regex ]]; then
         xdg-open https://www."$internetSearch" && hyprctl dispatch focuswindow initialclass:firefox | grep ok
     else
-        xdg-open https://www.google.com/search\?client\=firefox-b-d\&q\="$internetSearch" && hyprctl dispatch focuswindow initialclass:firefox | grep ok
+        xdg-open https://duckduckgo.com/?q="$internetSearch" && hyprctl dispatch focuswindow initialclass:firefox | grep ok
     fi
 fi
