@@ -2,13 +2,16 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 
 vim.api.nvim_create_autocmd("TextYankPost", {
-    pattern = "*",
-    callback = function()
-        vim.highlight.on_yank({ higroup = "Search", timeout = 200 })
-    end,
+	pattern = "*",
+	callback = function()
+		vim.highlight.on_yank({ higroup = "Search", timeout = 200 })
+	end,
 })
 
 vim.opt.guicursor = ""
+
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "¤", space = "⋅" }
+vim.opt.list = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
