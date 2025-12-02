@@ -70,9 +70,9 @@ function switch_owner_and_size(formatted_listing)
 }'"
 
 UPDATE_SCRIPT="
-echo -e \"Checking for updates in the official Arch repos and the AUR:\\n\"
+echo -e \"\\n:: $(tput bold)Checking for updates in the official Arch repos and the AUR...$(tput sgr0)\\n\"
 yay
-echo -e \"\\nChecking for updates in the Snap repos:\\n\"
+echo -e \"\\n:: $(tput bold)Checking for updates in the Snap repos...$(tput sgr0)\\n\"
 sudo snap refresh
 "
 
