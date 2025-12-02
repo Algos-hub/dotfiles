@@ -69,6 +69,13 @@ function switch_owner_and_size(formatted_listing)
     }
 }'"
 
+UPDATE_SCRIPT="
+echo -e \"Checking for updates in the official Arch repos and the AUR:\\n\"
+yay
+echo -e \"\\nChecking for updates in the Snap repos:\\n\"
+sudo snap refresh
+"
+
 LS_FLAGS="-lAhtrpG --color=always --time-style='+%_d %b %H:%M' --group-directories-first"
 
 alias lsnf="'ls' $LS_FLAGS"
@@ -79,7 +86,7 @@ alias grep="grep --color=always"
 alias vim="nvim"
 alias adbrr="adb shell settings put secure oplus_customize_screen_refresh_rate 0 && adb shell settings put system peak_refresh_rate 1 && adb shell settings put system min_refresh_ rate 1 && adb shell settings put system user_refresh_ rate 1"
 alias symfony="/usr/bin/symfony"
-alias update="yay && sudo snap refresh"
+alias update="$UPDATE_SCRIPT"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
