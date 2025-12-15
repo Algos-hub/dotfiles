@@ -1,50 +1,49 @@
 @import "./rose-pine-moon.css";
 
 * {
-  border: none;
-  border-radius: 10px;
-  font-family: JetBrainsMono Nerd Font;
-  font-size: 15px;
-  min-height: 0;
+    border: none;
+    border-radius: 10px;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 15px;
+    min-height: 0;
 }
 
 window#waybar {
-  background: transparent;
-  color: white;
+    background: transparent;
+    color: white;
 }
 
 #mpris {
-  background: @base;
-  padding: 0 15px;
+    background: @base;
+    padding: 0 15px;
 }
 
 window#waybar.empty #mpris.empty {
-  background: none;
+    background: none;
 }
 
 tooltip {
-  background-color: @base;
+    background-color: @base;
 }
 
 tooltip label {
-  color: white;
+    color: white;
 }
 
 #workspaces,
 #submap {
-  background: @base;
+    background: @base;
 }
 
 #workspaces button {
-  background: transparent;
-  color: white;
+    background: transparent;
+    color: white;
 }
 
 #workspaces button.active {
-  background: @overlay;
+    background: @overlay;
 }
 
-#submap,
 #memory,
 #pulseaudio,
 #network,
@@ -52,72 +51,48 @@ tooltip label {
 #temperature,
 #tray,
 #clock {
-  padding: 0 20px 0 15px;
-  background: @base;
-}
-
-#submap {
-  padding: 0 15px 0 15px;
-}
-
-#submap.Focus {
-  background: @iris;
-  color: black;
-}
-
-#submap.MoveFocus {
-  background: @foam;
-  color: black;
-}
-
-#submap.Resize {
-  background: @rose;
-  color: black;
-}
-
-#submap.Streaming {
-  background: @love;
-  color: black;
+    padding: 0 20px 0 15px;
+    background: @base;
 }
 
 #tray {
-  padding: 0 5px 0 5px;
+    padding: 0 5px 0 5px;
 }
 
 #clock {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 #cpu,
 #temperature {
-  color: @foam;
+    color: @foam;
 }
 
 #memory {
-  color: @iris;
+    color: @iris;
 }
 
 #network {
-  color: @pine;
+    color: @pine;
 }
 
 #keyboard-state label.locked {
-  background: @rose;
-  color: black;
+    background: @rose;
+    color: black;
 }
 
 #pulseaudio {
-  color: @rose;
+    color: @rose;
 }
 
 #pulseaudio.muted {
-  color: black;
-  background: @love;
+    color: black;
+    background: @love;
 }
 
 @keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: black;
-  }
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
 }

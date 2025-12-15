@@ -6,7 +6,7 @@
   "margin": "0 10 10 10",
   "spacing": 5, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/submap", "hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-center": ["mpris"],
   "modules-right": [
     "memory",
