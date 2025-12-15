@@ -18,13 +18,54 @@ return {
 			arrow = { left = "", right = "" },
 		}
 
+		require("multicursors").setup({
+			hint_config = false,
+		})
+
+		local function get_name()
+			local ok, hydra = pcall(require, "hydra.statusline")
+			if ok then
+				return hydra.get_name()
+			end
+			return ""
+		end
+
 		local function ins_config(location, component)
 			sections["lualine_" .. location] = component
 		end
 
+		local function current_mode()
+			if get_name() then
+				return string.upper(get_name())
+			else
+				local mode = vim.api.nvim_get_mode().mode
+				if mode == "n" then
+					return "NORMAL"
+				end
+				if mode == "i" then
+					return "INSERT"
+				end
+				if mode == "c" then
+					return "COMMAND"
+				end
+				if mode == "R" then
+					return "REPLACE"
+				end
+				if mode == "v" then
+					return "VISUAL"
+				end
+				if mode == string.char(22) then
+					return "VISUAL-BLOCK"
+				end
+				if mode == "V" then
+					return "VISUAL-LINE"
+				end
+			end
+		end
+
 		ins_config("a", {
 			{
-				"mode",
+				current_mode,
 				icon = icons.vim,
 				separator = { left = icons.block.left, right = icons.default.right },
 				right_padding = 2,
