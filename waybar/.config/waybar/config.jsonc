@@ -33,27 +33,23 @@
     "tooltip": true,
     "tooltip-format": "{dynamic}",
   },
-  "hyprland/submap": {
-    "format": "{:.1}",
-    "max-length": 1,
-    "tooltip": false,
-    "always-on": true,
-    "default-submap": "Normal",
-  },
   "temperature": {
-    "format": "{temperatureC}°C ",
+    "format": "{temperatureC:^3}°C ",
     "tooltip": false,
+    "interval": 3,
   },
   "clock": {
     "interval": 1,
     "tooltip": false,
   },
   "cpu": {
-    "format": "{usage}% ",
+    "format": "{usage:^3}% ",
     "tooltip": true,
+    "interval": 3,
   },
   "memory": {
-    "format": "{}% ",
+    "format": "{percentage:^3}% ",
+    "interval": 3,
   },
   "network": {
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -65,13 +61,14 @@
   },
   "pulseaudio": {
     "tooltip": false,
-    "format": "{volume}% <span size='125%'>{icon}</span>",
+    "format": "{volume:^3}% <span size='125%'>{icon}</span>",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": "{volume}% <span size='125%'>{icon}</span>",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
+      "test": "{volume}%",
       "headphone": "",
       "hands-free": "",
       "headset": "",
