@@ -3,7 +3,7 @@
 current_window_location=$(hyprctl dispatch movewindow r)
 
 if [[ "$current_window_location" = "ok" ]] then
-    hyprctl dispatch movewindow r
+    echo ""
 else
     hyprctl dispatch movetoworkspace r+1
     hyprctl dispatch movewindow l
