@@ -8,8 +8,8 @@ if [[ "$current_player" ]] then
             pgrep tidal-hifi > /dev/null 2>&1 && hyprctl dispatch togglespecialworkspace tidal || tidal-hifi
             ;;
 
-        'firefox')
-            hyprctl clients | grep YouTube\ Music > /dev/null 2>&1 && hyprctl dispatch togglespecialworkspace music.youtube || /usr/bin/firefoxpwa site launch 01K2HNY553PNX7QE4QRH84EZS9
+        'chromium')
+            hyprctl clients | grep YouTube\ Music > /dev/null 2>&1 && hyprctl dispatch togglespecialworkspace music.youtube || youtube-music-desktop-app
             ;;
 
         'rhythmbox')
