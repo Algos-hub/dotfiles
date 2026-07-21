@@ -5,5 +5,5 @@ current_window=$(hyprctl activewindow | grep 'initialClass: kitty')
 if [[ "$current_window" ]] then
     kitty
 else
-    pgrep kitty > /dev/null 2>&1 && hyprctl dispatch focuswindow initialclass:kitty | grep ok || kitty
+    pgrep kitty > /dev/null 2>&1 && hyprctl dispatch 'hl.dsp.focus({ window = "class:^(kitty)$" })' | grep ok || kitty
 fi

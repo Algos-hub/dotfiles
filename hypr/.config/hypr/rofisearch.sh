@@ -8,8 +8,8 @@ if [[ -z "${internetSearch}" ]]; then
 else
     echo "$internetSearch"
     if [[ "$internetSearch" =~ $regex ]]; then
-        xdg-open https://www."$internetSearch" && hyprctl dispatch focuswindow initialclass:librewolf | grep ok
+        xdg-open https://www."$internetSearch" && hyprctl dispatch 'hl.dsp.focus({ window = "class:^(librewolf)$" })' | grep ok
     else
-        xdg-open https://duckduckgo.com/?q="$internetSearch" && hyprctl dispatch focuswindow initialclass:librewolf | grep ok
+        xdg-open https://duckduckgo.com/?q="$internetSearch" && hyprctl dispatch 'hl.dsp.focus({ window = "class:^(librewolf)$" })' | grep ok
     fi
 fi
