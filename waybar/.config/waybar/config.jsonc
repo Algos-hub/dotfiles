@@ -6,7 +6,7 @@
   "margin": "0 10 10 10",
   "spacing": 5, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["ext/workspaces"],
   "modules-center": ["mpris"],
   "modules-right": [
     "memory",
@@ -16,11 +16,16 @@
     "network",
     "clock",
   ],
+  "ext/workspaces": {
+    "all-outputs": true,
+    "on-click": "activate",
+    "active-only": false,
+  },
   "mpris": {
     "format": "{status_icon} {dynamic}",
     "interval": 1,
     "dynamic-order": ["title", "artist"],
-    "dynamic-len": 50,
+    "dynamic-len": 45,
     "status-icons": {
       "paused": " ",
       "playing": " ",
@@ -78,7 +83,7 @@
       "default": ["󰕿", "󰖀", "󰕾"],
       "default-muted": "󰖁",
     },
-    "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
-    "on-click": "pgrep pwvucontrol > /dev/null 2>&1 && killall pwvucontrol || pwvucontrol",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle ",
+    "on-click-right": "pgrep pwvucontrol > /dev/null 2>&1 && hyprctl dispatch togglespecialworkspace volumecontrol || pwvucontrol",
   },
 }

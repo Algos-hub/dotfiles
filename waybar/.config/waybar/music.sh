@@ -7,15 +7,19 @@ active_window=$hyprctl activewindow |awk '/pid:/ {print $2}'
 
 case $player_from_player_name in
 
-    'firefox' | 'tidal-hifi')
-        hyprctl dispatch togglespecialworkspace $player_from_url
+    'tidal-hifi')
+        hyprctl dispatch 'hl.dsp.workspace.toggle_special("tidal")'
+    ;;
+
+    'chromium')
+        hyprctl dispatch 'hl.dsp.workspace.toggle_special("music.youtube")'
     ;;
 
   *)
       if [ $active_window != $player_from_player_name ]; then
-          hyprctl dispatch focuswindow pid:$(pgrep -o $player_from_player_name)
+          hyprctl dispatch "hl.dsp.focus({ window = \"pid:$player_from_player_name\"})"
       else
-          hyprctl dispatch focuscurrentorlast
+          hyprctl dispatch 'hl.dsp.focus({ last = true })'
       fi
     ;;
 esac
