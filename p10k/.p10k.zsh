@@ -170,21 +170,21 @@
   fi
 
   # Separator between same-color segments on the left.
-  typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=''
+  typeset -g POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=''
   # Separator between same-color segments on the right.
-  typeset -g POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=''
+  typeset -g POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=''
   # Separator between different-color segments on the left.
-  typeset -g POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
+  typeset -g POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
   # Separator between different-color segments on the right.
-  typeset -g POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
+  typeset -g POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
   # To remove a separator between two segments, add "_joined" to the second segment name.
   # For example: POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(os_icon context_joined)
 
   # The right end of left prompt.
             # default = { left = "", right = " " },
-  typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=''
+  typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=''
   # The left end of right prompt.
-  typeset -g POWERLEVEL9K_RIGHT_PROMPT_FIRST_SEGMENT_START_SYMBOL=''
+  typeset -g POWERLEVEL9K_RIGHT_PROMPT_FIRST_SEGMENT_START_SYMBOL=''
   # The left end of left prompt.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL=''
   # The right end of right prompt.
@@ -225,10 +225,10 @@
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
   # typeset -g POWERLEVEL9K_DIR_BACKGROUND=4
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND="#ea9a97"
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND="#ffffff"
   # Default current directory foreground color.
   # typeset -g POWERLEVEL9K_DIR_FOREGROUND=254
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND="#27272b"
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND="#1d1d1d"
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
@@ -236,11 +236,11 @@
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
   # typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=250
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND="#27272b"
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND="#1d1d1d"
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
   # typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=255
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND="#27272b"
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND="#1d1d1d"
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.
@@ -559,8 +559,8 @@
 
   ###################[ command_execution_time: duration of the last command ]###################
   # Execution time color.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="#93a1a1"
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="#27272b"
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="#1d1d1d"
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND="#a4a4a4"
   # Show duration of the last command if takes at least this many seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
   # Show this many fractional digits. Zero means round to seconds.
@@ -575,7 +575,7 @@
   #######################[ background_jobs: presence of background jobs ]#######################
   # Background jobs color.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND=3
-  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="#27272b"
+  typeset -g POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="#a4a4a4"
   # Don't show the number of background jobs.
   typeset -g POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=false
   # Custom icon.
@@ -1763,8 +1763,8 @@
 
   ####################################[ time: current time ]####################################
   # Current time color.
-  typeset -g POWERLEVEL9K_TIME_FOREGROUND="#27272b"
-  typeset -g POWERLEVEL9K_TIME_BACKGROUND="#ea9a97"
+  typeset -g POWERLEVEL9K_TIME_FOREGROUND="#1d1d1d"
+  typeset -g POWERLEVEL9K_TIME_BACKGROUND="#ffffff"
   # Format for the current time: 09:51:02. See `man 3 strftime`.
   typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
   # If set to true, time will update when you hit enter. This way prompts for the past

@@ -101,13 +101,13 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 
 hl.config({
 	general = {
-		gaps_in = 5,
-		gaps_out = 10,
+		gaps_in = 2.5,
+		gaps_out = 5,
 		float_gaps = 10,
 
 		border_size = 2,
 
-		col = { active_border = iris, inactive_border = muted },
+		col = { active_border = 0xffffffff, inactive_border = 0xff4d4d4d },
 
 		resize_on_border = false,
 
@@ -122,7 +122,7 @@ hl.config({
 	-- },
 
 	decoration = {
-		rounding = 10,
+		rounding = 5,
 
 		active_opacity = 1.0,
 		inactive_opacity = 0.75,

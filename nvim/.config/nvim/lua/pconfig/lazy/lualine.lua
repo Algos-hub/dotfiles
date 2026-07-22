@@ -12,8 +12,8 @@ return {
 			vim = "",
 			git = "",
 			diff = { added = "󰐕", modified = "󰧞", removed = "󰍴" },
-			default = { left = "", right = " " },
-			round = { left = "", right = "" },
+			default = { left = "", right = " " },
+			round = { left = "", right = "" },
 			block = { left = "█", right = "█" },
 			arrow = { left = "", right = "" },
 		}
@@ -164,7 +164,7 @@ return {
 
 		require("lualine").setup({
 			options = {
-				-- theme = "rose-pine",
+				theme = "iceberg_dark",
 				component_separators = "",
 				section_separators = { left = icons.default.right, right = icons.default.left },
 				disabled_filetypes = {
