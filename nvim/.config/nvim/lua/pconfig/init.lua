@@ -1,3 +1,5 @@
 require("pconfig.set")
 require("pconfig.remap")
 require("pconfig.lazy_init")
+vim.api.nvim_set_hl(0, "Cursorline", { bg = "#444444" })
+vim.api.nvim_set_hl(0, "Colorcolumn", { bg = "#444444" })

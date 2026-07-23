@@ -59,6 +59,7 @@ vim.opt.ttyfast = true
 vim.opt.scrolloff = 999
 
 vim.api.nvim_set_hl(0, "ColorColumn", { bg = "cyan" })
+vim.api.nvim_set_hl(0, "Cursorline", { bg = "#444444" })
 
 vim.cmd("syntax on")
 vim.cmd("filetype plugin indent on")
