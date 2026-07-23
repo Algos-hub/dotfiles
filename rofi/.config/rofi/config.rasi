@@ -24,9 +24,10 @@ configuration{
 @import "default"
 
 * {
-	bg: #232136;
-	cur: #2a273f;
-	fgd: #e0def4;
+	bg: #222222;
+	cur: #c4c4c4;
+	act: #848484;
+	fgd: #ffffff;
 	cmt: #6e6a86;
 	cya: #9ccfd8;
 	grn: #3e8fb0;
@@ -37,23 +38,27 @@ configuration{
 
 	font: "JetBrainsMono Nerd Font 12";
 
-	foreground:        @fgd;
-	background:        @bg;
-	active-background: @pur;
-	urgent-background: @red;
+	foreground:            @fgd;
+	background:            @bg;
+	active-background:     @cur;
+	active-background-alt: @act;
+	active-foreground:     @fgd;
+	urgent-background:     @red;
 
-	selected-background:        @active-background;
-	selected-urgent-background: @urgent-background;
-	selected-active-background: @active-background;
-	separatorcolor:             @active-background;
-	bordercolor:                @pur;
+	selected-background:            @active-background;
+	selected-urgent-background:     @urgent-background;
+	selected-active-background:     @active-background;
+	selected-active-background-alt: @active-background-alt;
+	selected-active-foreground:     @active-foreground;
+	separatorcolor:                 @active-background;
+	bordercolor:                    @fgd;
 }
 
 #window {
 	background-color: @background;
 	border-color:     @bordercolor;
 	border:           2;
-	border-radius:    10;
+	border-radius:     5;
 	padding:          5;
     width:            30%;
 }
@@ -83,6 +88,9 @@ configuration{
 element-icon {
     size: 1.5em;
 }
+#element.normal {
+        border-radius:    2.5px;
+}
 #element.normal.normal {
 	background-color: @background;
 	text-color:       @foreground;
@@ -92,13 +100,14 @@ element-icon {
 	text-color:       @urgent-foreground;
 }
 #element.normal.active {
-	background-color: @active-background;
-	text-color:       @background;
+	background-color: @active-background-alt;
+	text-color:       @active-foreground;
+    border-radius:    2.5px;
 }
 #element.selected.normal {
 	background-color: @selected-background;
 	text-color:       black;
-    border-radius:    5px;
+    border-radius:    2.5px;
 }
 #element.selected.urgent {
 	background-color: @selected-urgent-background;
@@ -118,7 +127,7 @@ element-icon {
 }
 #element.alternate.active {
 	background-color: @active-background;
-	text-color:       @foreground;
+	text-color:       @active-foreground;
 }
 #scrollbar {
 	width:        2px ;
@@ -141,7 +150,7 @@ element-text {
 #button.selected {
 	background-color: @selected-background;
 	text-color:       black;
-    border-radius:    5px;
+    border-radius:    2.5px;
 }
 #inputbar {
 	spacing:    0;
