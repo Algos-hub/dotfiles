@@ -75,11 +75,11 @@ local obs = "pgrep obs > /dev/null 2>&1 && hyprctl dispatch 'hl.dsp.workspace.to
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("ddcutil setvcp 10 --display 1 100")
-	hl.exec_cmd("solaar --window-hide")
 	hl.exec_cmd("waybar & hyprpaper & hypridle")
 	hl.exec_cmd("hyprpm reload")
 	hl.exec_cmd("[workspace special:audio silent] easyeffects")
 	hl.exec_cmd("[workspace special:volumecontrol silent] pwvucontrol")
+	hl.exec_cmd("solaar --window-hide")
 end)
 
 --==================================================================
