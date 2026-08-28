@@ -64,6 +64,8 @@ local emojis =
 	'pgrep rofi > /dev/null 2>&1 && killall rofi || rofi -modi emoji -show emoji -kb-secondary-copy "" -kb-custom-1 Return -kb-accept-entry Ctrl+C'
 local volumecontrol =
 	"pgrep pwvucontrol > /dev/null 2>&1 && hyprctl dispatch 'hl.dsp.workspace.toggle_special(\"volumecontrol\")' || pwvucontrol"
+local solaar =
+	"pgrep solaar > /dev/null 2>&1 && hyprctl dispatch 'hl.dsp.workspace.toggle_special(\"solaar\")' || solaar"
 local easyeffects =
 	"pgrep easyeffects > /dev/null 2>&1 && hyprctl dispatch 'hl.dsp.workspace.toggle_special(\"audio\")' || easyeffects"
 local obs = "pgrep obs > /dev/null 2>&1 && hyprctl dispatch 'hl.dsp.workspace.toggle_special(\"obs\")' || obs"
@@ -79,7 +81,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("hyprpm reload")
 	hl.exec_cmd("[workspace special:audio silent] easyeffects")
 	hl.exec_cmd("[workspace special:volumecontrol silent] pwvucontrol")
-	hl.exec_cmd("solaar --window-hide")
+	hl.exec_cmd("[workspace special:solaar silent] solaar")
 end)
 
 --==================================================================
@@ -209,6 +211,7 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(ytmusic))
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(passwordManager))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(volumecontrol))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(solaar))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(obs))
 hl.bind(mainMod .. " + SHIFT + Space", hl.dsp.exec_cmd(emojis))
 hl.bind(mainMod .. " + CTRL + Space", hl.dsp.exec_cmd(internetSearch))
