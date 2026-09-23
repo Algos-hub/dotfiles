@@ -291,7 +291,21 @@ hl.bind(
 	hl.dsp.exec_cmd("playerctl previous"),
 	{ locked = true, repeating = true }
 )
+
 hl.bind(mainMod .. " + XF86AudioRaiseVolume", hl.dsp.exec_cmd("playerctl next"), { locked = true, repeating = true })
+
+hl.bind(
+	"ALT + XF86AudioRaiseVolume",
+	hl.dsp.exec_cmd("ddcutil setvcp 10 --display 1 + 10"),
+	{ locked = true, repeating = true }
+)
+
+hl.bind(
+	"ALT + XF86AudioLowerVolume",
+	hl.dsp.exec_cmd("ddcutil setvcp 10 --display 1 - 10"),
+	{ locked = true, repeating = true }
+)
+
 hl.bind(
 	"XF86AudioRaiseVolume",
 	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+ -l 1"),
