@@ -295,13 +295,13 @@ hl.bind(
 hl.bind(mainMod .. " + XF86AudioRaiseVolume", hl.dsp.exec_cmd("playerctl next"), { locked = true, repeating = true })
 
 hl.bind(
-	"ALT + XF86AudioRaiseVolume",
+	mainMod .. " + CTRL + XF86AudioRaiseVolume",
 	hl.dsp.exec_cmd("ddcutil setvcp 10 --display 1 + 10"),
 	{ locked = true, repeating = true }
 )
 
 hl.bind(
-	"ALT + XF86AudioLowerVolume",
+	mainMod .. " + CTRL + XF86AudioLowerVolume",
 	hl.dsp.exec_cmd("ddcutil setvcp 10 --display 1 - 10"),
 	{ locked = true, repeating = true }
 )
